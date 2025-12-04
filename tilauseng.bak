@@ -1,0 +1,206 @@
+<html>
+
+<head>
+<title>Tilauslomake - Orders</title>
+<meta name="generator" content="Namo WebEditor v5.0(Trial)">
+<meta name="description" content="Straight from Finnish family essemble Rantamäki Martta, Otto, Merja, Margit, Anna-Liisa,">
+<meta name="keywords" content="Martta, Rantamäki, Otto, Merja, Liisa, Anna-Liisa, Margit, haitari, kansanmusiikki,  omakustanne, sanoin, ja , sävelin, joululauluja, ollaan, suomalaisii, rakasta, kärsi, unhoita,  lauluja, elämälle">
+</head>
+
+<body bgcolor="#0099CC" text="black" link="blue" vlink="purple" alink="red">
+
+<form method="post" action="http://cgi.neutech.fi/afm.cgi">
+    <p><input type=hidden name=RECIPIENT value="postmaster@ollaansuomalaisii.fi">
+<input type=hidden name=THANKURL value="http://www.ollaansuomalaisii.fi/kiitoseng.htm">
+<input type=hidden name=SUBJECT value="postmaster@ollaansuomalaisii.fi">
+<input type=hidden name=FROMADDRESS value="web@ollaansuomalaisii.fi">
+
+    </p>
+
+<form method=post action="http://cgi.neutech.fi/afm.cgi">
+<form name="Tilauslomake" method="post" enctype="text/plain">
+    <table width="500" align="center" bordercolordark="#707070" bordercolorlight="silver" border="1" class="namo-table">
+        <tr>
+                        <th width="490" colspan="2" bgcolor="#CCCCCC">                            <p align="center" class="namo-sublist"> 
+                            Orders / Feedback</th>
+        </tr>
+        <tr>
+                        <th width="97" class="namo-th" bgcolor="#CCCCCC"><p align="left"><FONT size="2">Name : </FONT></th>
+            <td width="387">
+                <p><input type="text" name="Nimi" size="50"></td>
+        </tr>
+        <tr>
+                        <th width="97" class="namo-th" bgcolor="#CCCCCC">
+                    <p align="left">Address :</p>
+</th>
+            <td width="387">
+                <p><input type="text" name="Osoite" size="50"></td>
+        </tr>
+        <tr>
+                        <th width="97" class="namo-th" bgcolor="#CCCCCC"><p align="left"><FONT size="2">E-Mail : </FONT></th>
+            <td width="387">
+                <p><input type="text" name="email" size="50"></td>
+        </tr>
+        <tr>
+                        <th width="97" class="namo-th" bgcolor="#CCCCCC"><p align="left">Phone</th>
+            <td width="387">
+														  <input type=text size="30" name="Puhelin"  onchange=onlyNumber()></td>
+        </tr>
+        <tr>
+                        <th width="97" class="namo-th" bgcolor="#CCCCCC"><p align="left"><FONT size="2">Fax : </FONT></th>
+            <td width="387">
+														<input type=text size="30" name="fax"  onchange=onlyNumber()></td>
+        </tr>
+        <tr>
+                        <th width="97" class="namo-th" bgcolor="#CCCCCC">                            <p align="left">Matter</p>
+                        </th>
+                        <td width="387" class="namo-th">													
+                            <p align="left"><SELECT NAME="aihe">
+													<option selected>Order</option>
+													<option>Question</option>
+													<option>Feedback</option>
+													</SELECT></td>
+        </tr>
+                    <tr>
+                        <th width="97" class="namo-th" bgcolor="#CCCCCC">                            <p align="left">Ollaan 
+                Suomalaisii</p>
+                        </th>
+                        <td width="387" class="namo-th">														
+                            <p align="left"><select name="Ollaan Suomalaisii">
+                    <option>0</option>
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+														</select>pcs 
+                    <input type="checkbox" name="Ollaan cd">cd &nbsp;&nbsp;eur 
+                        20.00 
+</td>
+                    </tr>
+                    <tr>
+                        <th width="97" class="namo-th" bgcolor="#CCCCCC">
+                    <p align="left">Sanoin 
+                ja Sävelin </th>
+                        <td width="387" class="namo-th">														
+                            <p align="left"><select name="Sanoin ja Savelin">
+                    <option>0</option>
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+														</select> 
+                pcs <input type="checkbox" name="sanoin ja cd 15e">cd eur15.00 
+<input type="checkbox" name="sanoin ja kasetti 10e">tape eur 10.00</td>
+                    </tr>
+                    <tr>
+                        <th width="97" class="namo-th" bgcolor="#CCCCCC" height="26">                            <p align="left">Sanoin 
+                ja Sävelin I-III</p>
+                        </th>
+                        <td width="387" class="namo-th" height="26">														
+                            <p align="left"><select name="Sanoin ja Savelin I-III">
+                    <option>0</option>
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+														</select> 
+                pcs (Notebooks) eur 20.00</td>
+                    </tr>
+                    <tr>
+                        <th width="97" class="namo-th" bgcolor="#CCCCCC" height="26">                            <p align="left">Joululauluja</p>
+                        </th>
+                        <td width="387" class="namo-th" height="26">														
+                            <p align="left"><select name="Joululauluja">
+                    <option>0</option>
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+														</select> 
+                pcs <input type="checkbox" name="joulu cd">cd eur 15.00 
+<input type="checkbox" name="joulu kasetti">tape eur 10.00</td>
+                    </tr>
+        <tr>
+                        <th width="97" class="namo-th" bgcolor="#CCCCCC">                    <p align="left">Joululauluja</p>
+</th>
+                        <td width="387" class="namo-th">
+                            <p align="left"><select name="Joululauluja nuottikirja">
+                    <option>0</option>
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+														</select> 
+                pcs (Notebook) &nbsp;eur 6.00</td>
+        </tr>
+        <tr>
+                        <th width="97" class="namo-th" bgcolor="#CCCCCC"><p align="left">Lauluja 
+                elämälle</p>
+</th>
+                        <td width="387" class="namo-th">
+                            <p align="left"><select name="Lauluja Elamalle">
+                    <option>0</option>
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+														</select> 
+                pcs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<input type="checkbox" name="lauluja kasetti">tape eur 10.00</td>
+        </tr>
+        <tr>
+                        <th width="97" class="namo-th" bgcolor="#CCCCCC"><p align="left">Rakasta, 
+                kärsi ja unhoita</p>
+</th>
+                        <td width="387" class="namo-th">
+                            <p align="left"><select name="Rakasta karsi ja unhoita">
+                    <option>0</option>
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+														</select> 
+                pcs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<input type="checkbox" name="rakasta kasetti">tape eur 6.00</td>
+        </tr>
+        <tr>
+                        <th width="97" class="namo-th" bgcolor="#CCCCCC"><p align="left">&nbsp;</p>
+</th>
+                        <td width="387" class="namo-th">
+                            <p align="left">&nbsp;</td>
+        </tr>
+        <tr>
+                        <th width="97" class="namo-th" bgcolor="#CCCCCC">
+                    <p align="left">&nbsp;</p>
+</th>
+                        <td width="387" class="namo-th">
+                            <p align="left"><b>Invoice with orderconfirmation 
+                        will be send to your eMail Delivery costs will be add 
+                        by prices of UPS<br>OBS! By using bigger collective 
+                        quatities you can share and save with freigh and bank 
+                        costs.<br>Also wholesale purchases are possible by using 
+                        this form.<br>Only pre-payment by bank are available 
+                        at the moment (Clear instructions with invoice)</b></td>
+        </tr>
+        <tr>
+                        <th width="97" class="namo-th" bgcolor="#CCCCCC">
+                    <p align="left">Comments:<br></th>
+                        <td width="387" class="namo-th">
+                            <p align="left"><textarea name="Comment" rows="10" cols="35"></textarea></td>
+        </tr>
+        <tr>
+                        <td width="490" align="right" class="namo-th" height="24" colspan="2">                <p align="center"><FONT size="2"><input type="submit" value="Send"> <input type="reset" value="Reset"></FONT></td>
+        </tr>
+    </table>
+        </form>
+    </form>
+</form>
+<p align="center">If any questions, please call to +358442621562 or <a href="mailto:me@ollaansuomalaisii.fi">eMail</a> 
+to us <a href="mailto:me@ollaansuomalaisii.fi">me@ollaansuomalaisii.fi</a></p>
+<p align="center"><img src="http://cgi.neutech.fi/Count.cgi?df=tilauseng.dat&dd=A" width="70" height="21"></p>
+<form method="post" action="http://cgi.neutech.fi/afm.cgi">
+<form method=post action="http://cgi.neutech.fi/afm.cgi">
+            <p>&nbsp;</p>
+</body>
+
+</html>
