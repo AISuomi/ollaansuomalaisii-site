@@ -16,9 +16,77 @@
   <meta property="og:description" content="Tervetuloa Rantamäen perheyhtyeen sivustolle – haitarimusiikkia ja lauluja elämästä.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="Kuvat/vedos.jpg">
+  <meta property="og:image:alt" content="Rantamäen perheyhtye">
 
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #d7f1ff; /* kevyt sininen, voit halutessa vaihtaa */
+      /* jos haluat lippulaatan taustaan, voit käyttää:
+         background: #ffffff url("Kuvat/fin1.gif") repeat;
+      */
+      color: #102030;
+    }
+
+    .overlay {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .intro-box {
+      max-width: 500px;
+      text-align: left;
+      background: #ffffff;
+      padding: 1.8rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.5rem;
+    }
+
+    .cover {
+      width: 240px;
+      border-radius: 8px;
+    }
+
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: 1.7rem;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0 0 1rem;
+      font-size: 1rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.6rem 1.4rem;
+      background: #0c6fbf;
+      color: #ffffff;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background: #084f8c;
+    }
+
+    .note {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #555;
+    }
+  </style>
 </head>
+
 <body>
   <div class="overlay">
     <div class="intro-box">
