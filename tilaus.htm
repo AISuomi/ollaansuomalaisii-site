@@ -1,198 +1,307 @@
-/* Tilaussivu peruslayout */
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Tilaus – Rantamäen perheyhtye</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-.order-page {
-  max-width: 900px;
-  margin: 1.5rem auto 2rem;
-  padding: 0 1rem;
-}
+  <meta name="description" content="Tilaa Rantamäen perheyhtyeen äänitteitä ja nuotteja – Ollaan suomalaisii, Sanoin ja sävelin, Joululauluja, Lauluja elämälle, Rakasta kärsi ja unhoita, Muistojen taikaa.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="order-page">
 
-.order-intro,
-.order-form {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 1.2rem 1.4rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
-  margin-bottom: 1rem;
-}
+    <!-- Levyjen galleria -->
+    <section class="order-gallery">
+      <h2>Äänitteet ja nuotit</h2>
+      <div class="album-grid">
+        <figure class="album-card">
+          <img src="Kuvat/vedos.jpg" alt="Ollaan suomalaisii">
+          <figcaption>Ollaan suomalaisii</figcaption>
+        </figure>
 
-.order-fieldset {
-  border: 1px solid #d0d8e0;
-  border-radius: 8px;
-  padding: 0.9rem 1rem 1rem;
-  margin-bottom: 1rem;
-}
+        <figure class="album-card">
+          <img src="Kuvat/MuistojenTaikaa.jpg" alt="Muistojen taikaa">
+          <figcaption>Muistojen taikaa</figcaption>
+        </figure>
 
-.order-fieldset legend {
-  padding: 0 0.3rem;
-  font-weight: 600;
-}
+        <!-- Voit lisätä tähän lisää levyjen kansia samalla tyylillä -->
+      </div>
+    </section>
 
-.field-row {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  margin-bottom: 0.6rem;
-}
+    <section class="order-intro">
+      <h1>Tilauslomake</h1>
+      <p>
+        Voit tilata Rantamäen perheyhtyeen äänitteitä ja nuotteja alla olevalla lomakkeella.
+        Kun painat <strong>Lähetä tilaus</strong>, tilaus lähetetään palvelimen kautta
+        käsiteltäväksi, eikä erillistä sähköpostiohjelmaa tarvita.
+      </p>
+      <p>
+        Laskemme tilauksesi ja lähetämme ennakkolaskun sekä tilausvahvistuksen
+        antamaasi sähköpostiosoitteeseen. Hintoihin lisätään postikulut
+        lähetyksen painon mukaan.
+      </p>
+    </section>
 
-.field-row input,
-.order-fieldset textarea {
-  padding: 0.4rem 0.5rem;
-  border-radius: 6px;
-  border: 1px solid #c0cad6;
-  font: inherit;
-}
+    <!-- Formspree-lomake -->
+    <form class="order-form"
+          action="https://formspree.io/f/mdkqdpbg"
+          method="POST">
 
-.order-fieldset textarea {
-  width: 100%;
-  resize: vertical;
-}
+      <!-- Asetetaan sähköpostin otsikko -->
+      <input type="hidden" name="_subject" value="Rantamäen perheyhtyeen tilaus">
 
-/* Tuoterivit */
+      <fieldset class="order-fieldset">
+        <legend>Yhteystiedot</legend>
 
-.product-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #eef2f7;
-}
+        <div class="field-row">
+          <label for="nimi">Nimi</label>
+          <input type="text" id="nimi" name="Nimi" required>
+        </div>
 
-.product-row:last-child {
-  border-bottom: none;
-}
+        <div class="field-row">
+          <label for="osoite">Osoite</label>
+          <input type="text" id="osoite" name="Osoite" required>
+        </div>
 
-.product-info {
-  max-width: 55%;
-}
+        <div class="field-row">
+          <label for="posti">Postinumero ja -toimipaikka</label>
+          <input type="text" id="posti" name="Postinumero ja -toimipaikka" required>
+        </div>
 
-.product-title {
-  font-weight: 600;
-}
+        <div class="field-row">
+          <label for="email">Sähköposti</label>
+          <!-- Formspree tunnistaa nimen "email" vastaukseksi -->
+          <input type="email" id="email" name="email" required>
+        </div>
 
-.product-note {
-  font-size: 0.85rem;
-  color: #555;
-}
+        <div class="field-row">
+          <label for="puhelin">Puhelin</label>
+          <input type="text" id="puhelin" name="Puhelin">
+        </div>
+      </fieldset>
 
-.product-controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem 0.8rem;
-  align-items: center;
-  justify-content: flex-end;
-}
+      <fieldset class="order-fieldset">
+        <legend>Tilattavat tuotteet</legend>
 
-.product-controls select {
-  padding: 0.25rem 0.4rem;
-  border-radius: 4px;
-  border: 1px solid #c0cad6;
-  font: inherit;
-}
+        <!-- Yksi tuoterivi = yksi formaatti, jotta hinnat selkeitä summaa varten -->
 
-/* Summa-laatikko */
+        <div class="product-row">
+          <div class="product-info">
+            <div class="product-title">Ollaan suomalaisii – CD</div>
+            <div class="product-note">20 € / kpl</div>
+          </div>
+          <div class="product-controls">
+            <label>
+              Määrä
+              <select class="product-qty" name="Ollaan suomalaisii – CD kpl" data-price="20">
+                <option value="0">0</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </label>
+          </div>
+        </div>
 
-.order-total-box {
-  margin: 0.8rem 0 0.6rem;
-  padding: 0.7rem 0.8rem;
-  border-radius: 8px;
-  background: #f3f7fb;
-  font-size: 0.95rem;
-}
+        <div class="product-row">
+          <div class="product-info">
+            <div class="product-title">Sanoin ja sävelin – CD</div>
+            <div class="product-note">15 € / kpl</div>
+          </div>
+          <div class="product-controls">
+            <label>
+              Määrä
+              <select class="product-qty" name="Sanoin ja sävelin – CD kpl" data-price="15">
+                <option value="0">0</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </label>
+          </div>
+        </div>
 
-#order-total {
-  margin-left: 0.4rem;
-}
+        <div class="product-row">
+          <div class="product-info">
+            <div class="product-title">Sanoin ja sävelin – kasetti</div>
+            <div class="product-note">10 € / kpl</div>
+          </div>
+          <div class="product-controls">
+            <label>
+              Määrä
+              <select class="product-qty" name="Sanoin ja sävelin – kasetti kpl" data-price="10">
+                <option value="0">0</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </label>
+          </div>
+        </div>
 
-.order-total-note {
-  font-size: 0.8rem;
-  color: #555;
-  margin-top: 0.2rem;
-}
+        <div class="product-row">
+          <div class="product-info">
+            <div class="product-title">Sanoin ja sävelin I–III – nuottikirja</div>
+            <div class="product-note">20 € / kpl</div>
+          </div>
+          <div class="product-controls">
+            <label>
+              Määrä
+              <select class="product-qty" name="Sanoin ja sävelin I–III – nuottikirja kpl" data-price="20">
+                <option value="0">0</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </label>
+          </div>
+        </div>
 
-/* Napit */
+        <div class="product-row">
+          <div class="product-info">
+            <div class="product-title">Joululauluja – CD</div>
+            <div class="product-note">15 € / kpl</div>
+          </div>
+          <div class="product-controls">
+            <label>
+              Määrä
+              <select class="product-qty" name="Joululauluja – CD kpl" data-price="15">
+                <option value="0">0</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </label>
+          </div>
+        </div>
 
-.order-actions {
-  display: flex;
-  gap: 0.75rem;
-  margin-top: 0.3rem;
-}
+        <div class="product-row">
+          <div class="product-info">
+            <div class="product-title">Joululauluja – kasetti</div>
+            <div class="product-note">10 € / kpl</div>
+          </div>
+          <div class="product-controls">
+            <label>
+              Määrä
+              <select class="product-qty" name="Joululauluja – kasetti kpl" data-price="10">
+                <option value="0">0</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </label>
+          </div>
+        </div>
 
-.order-actions button {
-  padding: 0.5rem 1.2rem;
-  border-radius: 999px;
-  border: none;
-  font-weight: 600;
-  cursor: pointer;
-}
+        <div class="product-row">
+          <div class="product-info">
+            <div class="product-title">Joululauluja – nuottivihko</div>
+            <div class="product-note">6 € / kpl</div>
+          </div>
+          <div class="product-controls">
+            <label>
+              Määrä
+              <select class="product-qty" name="Joululauluja – nuottivihko kpl" data-price="6">
+                <option value="0">0</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </label>
+          </div>
+        </div>
 
-.order-actions button[type="submit"] {
-  background: #0c6fbf;
-  color: #ffffff;
-}
+        <div class="product-row">
+          <div class="product-info">
+            <div class="product-title">Lauluja elämälle – kasetti</div>
+            <div class="product-note">10 € / kpl</div>
+          </div>
+          <div class="product-controls">
+            <label>
+              Määrä
+              <select class="product-qty" name="Lauluja elämälle – kasetti kpl" data-price="10">
+                <option value="0">0</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </label>
+          </div>
+        </div>
 
-.order-actions button[type="submit"]:hover {
-  background: #084f8c;
-}
+        <div class="product-row">
+          <div class="product-info">
+            <div class="product-title">Rakasta, kärsi ja unhoita – kasetti</div>
+            <div class="product-note">6 € / kpl</div>
+          </div>
+          <div class="product-controls">
+            <label>
+              Määrä
+              <select class="product-qty" name="Rakasta, kärsi ja unhoita – kasetti kpl" data-price="6">
+                <option value="0">0</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </label>
+          </div>
+        </div>
 
-.order-actions .secondary {
-  background: #e4ebf3;
-  color: #233548;
-}
+        <div class="product-row">
+          <div class="product-info">
+            <div class="product-title">Muistojen taikaa – CD</div>
+            <div class="product-note">20 € / kpl</div>
+          </div>
+          <div class="product-controls">
+            <label>
+              Määrä
+              <select class="product-qty" name="Muistojen taikaa – CD kpl" data-price="20">
+                <option value="0">0</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </label>
+          </div>
+        </div>
 
-.order-note {
-  margin-top: 0.75rem;
-  font-size: 0.85rem;
-  color: #555;
-}
+      </fieldset>
 
-/* Galleria */
+      <fieldset class="order-fieldset">
+        <legend>Kommentit ja lisätiedot</legend>
+        <textarea name="Lisätiedot" rows="4" placeholder="Esimerkiksi toivomasi toimitustapa tai muu viesti meille."></textarea>
+      </fieldset>
 
-.order-gallery {
-  max-width: 900px;
-  margin: 1.5rem auto 0.5rem;
-  padding: 0 1rem;
-}
+      <div class="order-total-box">
+        <strong>Tilauksen arvioitu summa:</strong>
+        <span id="order-total">0 €</span>
+        <div class="order-total-note">
+          (Summassa ei ole mukana postikuluja. Lopullinen lasku vahvistetaan erikseen.)
+        </div>
+      </div>
 
-.album-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 0.8rem;
-}
+      <div class="order-actions">
+        <button type="submit">Lähetä tilaus</button>
+        <button type="reset" class="secondary">Tyhjennä lomake</button>
+      </div>
 
-.album-card {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
-  text-align: center;
-}
+      <p class="order-note">
+        Huom! Lähetyksen jälkeen näytetään palvelun kuittaus, ja me käsittelemme tilauksen
+        ja vastaamme sinulle sähköpostitse.
+      </p>
+    </form>
+  </main>
 
-.album-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
+  <script>
+    function paivitaSumma() {
+      var total = 0;
+      var selects = document.querySelectorAll('.product-qty');
+      selects.forEach(function (sel) {
+        var kpl = parseInt(sel.value, 10) || 0;
+        var hinta = parseFloat(sel.getAttribute('data-price')) || 0;
+        total += kpl * hinta;
+      });
+      document.getElementById('order-total').textContent =
+        total.toFixed(2).replace('.00', '') + ' €';
+    }
 
-.album-card figcaption {
-  margin-top: 0.3rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-/* Mobiili */
-
-@media (max-width: 700px) {
-  .product-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .product-info {
-    max-width: 100%;
-  }
-
-  .product-controls {
-    justify-content: flex-start;
-  }
-}
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.product-qty').forEach(function (sel) {
+        sel.addEventListener('change', paivitaSumma);
+      });
+      paivitaSumma();
+    });
+  </script>
+</body>
+</html>
