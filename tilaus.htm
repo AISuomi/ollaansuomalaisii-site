@@ -241,5 +241,28 @@
       </p>
     </form>
   </main>
+    <script>
+    function paivitaSumma() {
+      var total = 0;
+      var selects = document.querySelectorAll('.product-qty');
+      selects.forEach(function (sel) {
+        var kpl = parseInt(sel.value, 10) || 0;
+        var hinta = parseFloat(sel.getAttribute('data-price')) || 0;
+        total += kpl * hinta;
+      });
+      document.getElementById('order-total').textContent =
+        total.toFixed(2).replace('.00', '') + ' €';
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.product-qty').forEach(function (sel) {
+        sel.addEventListener('change', paivitaSumma);
+      });
+      paivitaSumma();
+    });
+  </script>
+</body>
+</html>
+
 </body>
 </html>
