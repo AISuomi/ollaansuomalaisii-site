@@ -429,3 +429,22 @@ a:hover {
   }
 }
 
+/* Arvioitu summa laatikko */
+
+.order-total-box {
+  margin: 0.8rem 0 0.6rem;
+  padding: 0.7rem 0.8rem;
+  border-radius: 8px;
+  background: #f3f7fb;
+  font-size: 0.95rem;
+}
+
+#order-total {
+  margin-left: 0.4rem;
+}
+
+.order-total-note {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 0.2rem;
+}
