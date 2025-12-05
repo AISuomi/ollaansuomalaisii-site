@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Tilaus – Rantamäen perheyhtye</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Tilaa Rantamäen perheyhtyeen äänitteitä ja nuotteja – Ollaan suomalaisii, Sanoin ja sävelin, Joululauluja, Lauluja elämälle, Rakasta kärsi ja unhoita, Muistojen taikaa.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="order-page">
+    <section class="order-intro">
+      <h1>Tilauslomake</h1>
+      <p>
+        Voit tilata Rantamäen perheyhtyeen äänitteitä ja nuotteja alla olevalla lomakkeella.
+        Täytettyäsi lomakkeen paina <strong>Lähetä tilaus</strong> – sähköpostiohjelmasi avautuu,
+        ja voit vielä tarkistaa tilauksen ennen lähettämistä.
+      </p>
+      <p>
+        Laskemme tilauksesi ja lähetämme ennakkolaskun sekä tilausvahvistuksen
+        antamaasi sähköpostiosoitteeseen. Hintoihin lisätään postikulut
+        lähetyksen painon mukaan.
+      </p>
+    </section>
+
+    <form class="order-form"
+          action="mailto:me@ollaansuomalaisii.fi"
+          method="post"
+          enctype="text/plain">
+
+      <fieldset class="order-fieldset">
+        <legend>Yhteystiedot</legend>
+
+        <div class="field-row">
+          <label for="nimi">Nimi</label>
+          <input type="text" id="nimi" name="Nimi" required>
+        </div>
+
+        <div class="field-row">
+          <label for="osoite">Osoite</label>
+          <input type="text" id="osoite" name="Osoite" required>
+        </div>
+
+        <div class="field-row">
+          <label for="posti">Postinumero ja -toimipaikka</label>
+          <input type="text" id="posti" name="Postinumero ja -toimipaikka" required>
+        </div>
+
+        <div class="field-row">
+          <label for="email">Sähköposti</label>
+          <input type="email" id="email" name="Sähköposti" required>
+        </div>
+
+        <div class="field-row">
+          <label for="puhelin">Puhelin</label>
+          <input type="text" id="puhelin" name="Puhelin">
+        </div>
+      </fieldset>
+
+      <fieldset class="order-fieldset">
+        <legend>Tilattavat tuotteet</legend>
+
+        <!-- Yksi rivi / levy -->
+        <div class="product-row">
+          <div class="product-info">
+            <div class="product-title">Ollaan suomalaisii</div>
+            <div class="product-note">CD 20 €</div>
+          </div>
+          <div class="product-controls">
+            <label>
+              Määrä
+              <select name="Ollaan suomalaisii – kpl">
+                <option value="0">0</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="product-row">
+          <div class="product-info">
+            <div class="product-title">Sanoin ja sävelin</div>
+            <div class="product-note">CD 15 €, kasetti 10 €</div>
+          </div>
+          <div class="product-controls">
+            <label>
+              Määrä
+              <select name="Sanoin ja sävelin – kpl">
+                <option value="0">0</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </label>
+            <label>
+              <input type="checkbox" name="Sanoin ja sävelin – CD">
+              CD
+            </label>
+            <label>
+              <input type="checkbox" name="Sanoin ja sävelin – kasetti">
+              Kasetti
+            </label>
+          </div>
+        </div>
+
+        <div class="product-row">
+          <div class="product-info">
+            <div class="product-title">Sanoin ja sävelin I–III</div>
+            <div class="product-note">Nuottikirja 20 €</div>
+          </div>
+          <div class="product-controls">
+            <label>
+              Määrä
+              <select name="Sanoin ja sävelin I–III – kpl">
+                <option value="0">0</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="product-row">
+          <div class="product-info">
+            <div class="product-title">Joululauluja</div>
+            <div class="product-note">CD 15 €, kasetti 10 €</div>
+          </div>
+          <div class="product-controls">
+            <label>
+              Määrä
+              <select name="Joululauluja – kpl">
+                <option value="0">0</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </label>
+            <label>
+              <input type="checkbox" name="Joululauluja – CD">
+              CD
+            </label>
+            <label>
+              <input type="checkbox" name="Joululauluja – kasetti">
+              Kasetti
+            </label>
+          </div>
+        </div>
+
+        <div class="product-row">
+          <div class="product-info">
+            <div class="product-title">Joululauluja – nuottivihko</div>
+            <div class="product-note">Nuottivihko 6 €</div>
+          </div>
+          <div class="product-controls">
+            <label>
+              Määrä
+              <select name="Joululauluja – nuottivihko – kpl">
+                <option value="0">0</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="product-row">
+          <div class="product-info">
+            <div class="product-title">Lauluja elämälle</div>
+            <div class="product-note">Kasetti 10 €</div>
+          </div>
+          <div class="product-controls">
+            <label>
+              Määrä
+              <select name="Lauluja elämälle – kpl">
+                <option value="0">0</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="product-row">
+          <div class="product-info">
+            <div class="product-title">Rakasta, kärsi ja unhoita</div>
+            <div class="product-note">Kasetti 6 €</div>
+          </div>
+          <div class="product-controls">
+            <label>
+              Määrä
+              <select name="Rakasta, kärsi ja unhoita – kpl">
+                <option value="0">0</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="product-row">
+          <div class="product-info">
+            <div class="product-title">Muistojen taikaa</div>
+            <div class="product-note">CD 20 €</div>
+          </div>
+          <div class="product-controls">
+            <label>
+              Määrä
+              <select name="Muistojen taikaa – kpl">
+                <option value="0">0</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <!-- Tänne myöhemmin uudet tuotteet – helppo kopioida yksi product-row lisää -->
+      </fieldset>
+
+      <fieldset class="order-fieldset">
+        <legend>Kommentit ja lisätiedot</legend>
+        <textarea name="Lisätiedot" rows="4" placeholder="Esimerkiksi toivomasi toimitustapa tai muu viesti meille."></textarea>
+      </fieldset>
+
+      <div class="order-actions">
+        <button type="submit">Lähetä tilaus</button>
+        <button type="reset" class="secondary">Tyhjennä lomake</button>
+      </div>
+
+      <p class="order-note">
+        Huom! Lähetyksen jälkeen sähköpostiohjelmasi avaa viestin, jossa tilaus näkyy tekstinä.
+        Voit vielä tarkistaa ja lähettää viestin normaalisti.
+      </p>
+    </form>
+  </main>
+</body>
+</html>
