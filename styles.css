@@ -1,450 +1,167 @@
-/* Perustyyli */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  line-height: 1.6;
-  background: #d7f1ff; /* lempeä sininen tausta */
-  color: #102030;
-}
-
-/* Linkit */
-a {
-  color: #0057a3;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Yläosa */
-.site-header {
-  background: #0c6fbf;
-  color: #ffffff;
-  padding: 1rem 1.5rem 0.5rem;
-}
-
-.header-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.otto-box {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.otto-photo {
-  width: 90px;
-  height: auto;
-  border-radius: 6px;
-  border: 2px solid #ffffff;
-}
-
-.otto-text {
-  font-size: 0.9rem;
-}
-
-.rip-line {
-  font-weight: 600;
-  margin: 0 0 0.25rem;
-}
-
-.dates {
-  margin: 0;
-}
-
-.title-box {
-  flex: 1;
-  text-align: center;
-  min-width: 220px;
-}
-
-.flags-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.75rem;
-  font-size: 1.8rem;
-}
-
-.site-title {
-  font-weight: 700;
-  font-size: 1.7rem;
-}
-
-.subtitle {
-  margin-top: 0.3rem;
-  font-size: 0.95rem;
-}
-
-.cover-box {
-  text-align: center;
-}
-
-.cover-photo {
-  width: 130px;
-  height: auto;
-  border-radius: 6px;
-  border: 2px solid #ffffff;
-}
-
-.cover-caption {
-  margin-top: 0.25rem;
-  font-size: 0.85rem;
-}
-
-/* Navigaatio */
-.main-nav {
-  margin-top: 0.75rem;
-  background: #084f8c;
-}
-
-.main-nav ul {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0.3rem 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  max-width: 1100px;
-}
-
-.main-nav a {
-  display: block;
-  padding: 0.35rem 0.7rem;
-  border-radius: 999px;
-  font-size: 0.9rem;
-  color: #eaf6ff;
-  background: transparent;
-}
-
-.main-nav a:hover,
-.main-nav a.active {
-  background: #ffffff;
-  color: #084f8c;
-}
-
-/* Sivun asettelu */
-.page-layout {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1100px;
-  margin: 1.5rem auto;
-  padding: 0 1rem 2rem;
-  gap: 1.5rem;
-}
-
-/* Sivupalkki */
-.sidebar {
-  flex: 0 0 260px;
-  max-width: 320px;
-}
-
-.sidebar-section {
-  background: #ffffff;
-  padding: 1rem;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
-}
-
-.sidebar-section h2,
-.sidebar-section h3 {
-  margin-top: 0;
-  margin-bottom: 0.4rem;
-}
-
-.plain-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.plain-list li {
-  margin-bottom: 0.25rem;
-}
-
-.highlight {
-  font-weight: 600;
-}
-
-/* Pääsisältö */
-.content {
-  flex: 1;
-  min-width: min(100%, 320px);
-}
-
-.content > section,
-.content > article {
-  background: #ffffff;
-  padding: 1.3rem 1.4rem;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
-}
-
-.intro-block h1 {
-  margin-top: 0;
-}
-
-.release-note {
-  font-weight: 600;
-  color: #0c6fbf;
-}
-
-.two-column {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 1.25rem;
-}
-
-.two-column h2 {
-  margin-top: 0;
-}
-
-.button {
-  display: inline-block;
-  padding: 0.45rem 0.9rem;
-  border-radius: 999px;
-  background: #0c6fbf;
-  color: #ffffff;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.button:hover {
-  background: #084f8c;
-  text-decoration: none;
-}
-
-.story-block p:last-child {
-  margin-bottom: 0;
-}
-
-/* Alaosa */
-.site-footer {
-  text-align: center;
-  font-size: 0.85rem;
-  color: #334455;
-  padding: 1rem 0 1.5rem;
-}
-
-/* Mobiilissa */
-@media (max-width: 800px) {
-  .header-top {
-    align-items: flex-start;
-  }
-
-  .page-layout {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    flex: 1 1 auto;
-    max-width: 100%;
-  }
-
-  .two-column {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .main-nav ul {
-    justify-content: flex-start;
-  }
-}
-/* Tilaussivu */
-
-.order-page {
-  max-width: 900px;
-  margin: 1.5rem auto 2rem;
-  padding: 0 1rem;
-}
-
-.order-intro {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 1.2rem 1.4rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
-  margin-bottom: 1rem;
-}
-
-.order-intro h1 {
-  margin-top: 0;
-}
-
-.order-form {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 1.2rem 1.4rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
-}
-
-.order-fieldset {
-  border: 1px solid #d0d8e0;
-  border-radius: 8px;
-  padding: 0.9rem 1rem 1rem;
-  margin-bottom: 1rem;
-}
-
-.order-fieldset legend {
-  padding: 0 0.3rem;
-  font-weight: 600;
-}
-
-.field-row {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  margin-bottom: 0.6rem;
-}
-
-.field-row label {
-  font-size: 0.9rem;
-}
-
-.field-row input {
-  padding: 0.4rem 0.5rem;
-  border-radius: 6px;
-  border: 1px solid #c0cad6;
-  font: inherit;
-}
-
-.order-fieldset textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border-radius: 6px;
-  border: 1px solid #c0cad6;
-  font: inherit;
-  resize: vertical;
-}
-
-/* Tuoterivit */
-
-.product-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #eef2f7;
-}
-
-.product-row:last-child {
-  border-bottom: none;
-}
-
-.product-info {
-  max-width: 55%;
-}
-
-.product-title {
-  font-weight: 600;
-}
-
-.product-note {
-  font-size: 0.85rem;
-  color: #555;
-}
-
-.product-controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem 0.8rem;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.product-controls select {
-  padding: 0.25rem 0.4rem;
-  border-radius: 4px;
-  border: 1px solid #c0cad6;
-  font: inherit;
-}
-
-.product-controls label {
-  font-size: 0.85rem;
-}
-
-/* Napit */
-
-.order-actions {
-  display: flex;
-  gap: 0.75rem;
-  margin-top: 0.3rem;
-}
-
-.order-actions button {
-  padding: 0.5rem 1.2rem;
-  border-radius: 999px;
-  border: none;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.order-actions button[type="submit"] {
-  background: #0c6fbf;
-  color: #ffffff;
-}
-
-.order-actions button[type="submit"]:hover {
-  background: #084f8c;
-}
-
-.order-actions .secondary {
-  background: #e4ebf3;
-  color: #233548;
-}
-
-.order-note {
-  margin-top: 0.75rem;
-  font-size: 0.85rem;
-  color: #555;
-}
-
-/* Mobiili */
-
-@media (max-width: 700px) {
-  .product-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .product-info {
-    max-width: 100%;
-  }
-
-  .product-controls {
-    justify-content: flex-start;
-  }
-}
-
-/* Arvioitu summa laatikko */
-
-.order-total-box {
-  margin: 0.8rem 0 0.6rem;
-  padding: 0.7rem 0.8rem;
-  border-radius: 8px;
-  background: #f3f7fb;
-  font-size: 0.95rem;
-}
-
-#order-total {
-  margin-left: 0.4rem;
-}
-
-.order-total-note {
-  font-size: 0.8rem;
-  color: #555;
-  margin-top: 0.2rem;
-}
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Joululauluja - Rantamäki Martta, Otto, Merja, Margit, Anna-Liisa, Joulua odotellessa, Joulun rauha, Kodittoman joulu, Joulupukin kuperkeikka, Jouluprinsessa, Mummon joululaulu, Tähdet kukkii taivaan maljakoissa, Lapsuusjoulu, Joululle, Joulutunnelma</title>
+
+  <meta name="keywords" content="Martta, Rantamäki, Otto, Merja, Liisa, Anna-Liisa, Margit, haitari, kansanmusiikki, omakustanne, sanoin ja sävelin, joululauluja, ollaan suomalaisii, rakasta kärsi unhoita, lauluja elämälle, Joulua odotellessa, Joulun rauha, Kodittoman joulu, Joulupukin kuperkeikka, Jouluprinsessa, Mummon joululaulu, Tähdet kukkii taivaan maljakoissa, Lapsuusjoulu, Joululle, Joulutunnelma">
+  <meta name="description" content="Martta ja Otto Rantamäen Joululauluja – cd & kasetti, sekä Joululauluja-nuottikirja. Kuuntele introt kappaleista Joulua odotellessa, Joulun rauha, Kodittoman joulu, Joulupukin kuperkeikka, Jouluprinsessa, Mummon joululaulu, Tähdet kukkii taivaan maljakoissa, Lapsuusjoulu, Joululle ja Joulutunnelma.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Sivuston yhteiset tyylit -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Vain tämän sivun lisätyylit -->
+  <style>
+    body.joululauluja-page {
+      background: #b0002a; /* hillitty joulunpunainen */
+      color: #102030;
+    }
+
+    .album-wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem 1rem 3rem;
+    }
+
+    .album-card {
+      max-width: 980px;
+      width: 100%;
+      background: #fff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      display: grid;
+      grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+
+    .album-cover {
+      text-align: center;
+    }
+
+    .album-cover img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .listen-note {
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .track-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.25rem 0;
+      font-size: 0.95rem;
+    }
+
+    .track-list li + li {
+      margin-top: 0.2rem;
+    }
+
+    .album-text p {
+      margin: 0 0 0.75rem 0;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+
+    .price-block {
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+
+    .order-link {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      background: #b0002a;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .order-link:hover,
+    .order-link:focus {
+      background: #8a001f;
+      text-decoration: none;
+    }
+
+    .small-print {
+      font-size: 0.75rem;
+      color: #666;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 720px) {
+      .album-card {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body class="joululauluja-page">
+  <div class="album-wrapper">
+    <main class="album-card">
+      <div class="album-cover">
+        <a href="tilaus.htm">
+          <img src="Kuvat/joululauluja.gif" alt="Joululauluja – kansi">
+        </a>
+      </div>
+
+      <section class="album-text">
+        <p class="listen-note">
+          Allaolevista linkeistä voit kuunnella introt. Lataus voi kestää hetken,
+          mutta hyväähän kannattaa vähän odottaakin.
+        </p>
+
+        <ul class="track-list">
+          <li><a href="Introt/Joululauluja/01-Joulua%20odotellessa.mp3" target="_blank">Joulua odotellessa</a></li>
+          <li><a href="Introt/Joululauluja/02-Joulun%20rauha.mp3" target="_blank">Joulun rauha</a></li>
+          <li><a href="Introt/Joululauluja/03-Kodittoman%20joulu.mp3" target="_blank">Kodittoman joulu</a></li>
+          <li><a href="Introt/Joululauluja/04-Joulupukin%20kuperkeikka.mp3" target="_blank">Joulupukin kuperkeikka</a></li>
+          <li><a href="Introt/Joululauluja/05-Jouluprinsessa.mp3" target="_blank">Jouluprinsessa</a></li>
+          <li><a href="Introt/Joululauluja/06-Mummon%20joululaulu.mp3" target="_blank">Mummon joululaulu</a></li>
+          <li><a href="Introt/Joululauluja/07-Tahdet%20kukkii%20taivaan%20maljakoissa.mp3" target="_blank">Tähdet kukkii taivaan maljakoissa</a></li>
+          <li><a href="Introt/Joululauluja/08-Lapsuusjoulu.mp3" target="_blank">Lapsuusjoulu</a></li>
+          <li><a href="Introt/Joululauluja/09-Joululle.mp3" target="_blank">Joululle</a></li>
+          <li><a href="Introt/Joululauluja/10-Joulutunnelma.mp3" target="_blank">Joulutunnelma</a></li>
+        </ul>
+
+        <p>
+          <strong>Joululauluja</strong> (cd &amp; kasetti) Martan sävelin,
+          sanoja on tähän äänitteeseen saatu Martan lisäksi Eila Pöntisenaholta,
+          Reetta Suolta, Ulla Perälältä ja Margit-tyttäreltä.
+        </p>
+
+        <p>
+          Laulut triona Anna-Liisa, Margit ja Merja, Martta &amp; Otto säestämässä.
+        </p>
+
+        <p><strong>Saatavilla myös Joululauluja -nuottikirja</strong></p>
+
+        <p class="price-block">
+          h. kasetti 10e, cd 15e<br>
+          Joululauluja -nuottivihko 6e<br>
+          Nuottivihko + kasetti tai cd yht 15e
+        </p>
+
+        <a class="order-link" href="tilaus.htm">Tilaa tästä</a>
+
+        <p class="small-print">
+          (Tilaukset avautuvat uuteen tilauslomakkeeseen.)
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
