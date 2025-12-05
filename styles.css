@@ -1,0 +1,265 @@
+/* Perustyyli */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background: #d7f1ff; /* lempeä sininen tausta */
+  color: #102030;
+}
+
+/* Linkit */
+a {
+  color: #0057a3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Yläosa */
+.site-header {
+  background: #0c6fbf;
+  color: #ffffff;
+  padding: 1rem 1.5rem 0.5rem;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.otto-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.otto-photo {
+  width: 90px;
+  height: auto;
+  border-radius: 6px;
+  border: 2px solid #ffffff;
+}
+
+.otto-text {
+  font-size: 0.9rem;
+}
+
+.rip-line {
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+}
+
+.dates {
+  margin: 0;
+}
+
+.title-box {
+  flex: 1;
+  text-align: center;
+  min-width: 220px;
+}
+
+.flags-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.8rem;
+}
+
+.site-title {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.subtitle {
+  margin-top: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.cover-box {
+  text-align: center;
+}
+
+.cover-photo {
+  width: 130px;
+  height: auto;
+  border-radius: 6px;
+  border: 2px solid #ffffff;
+}
+
+.cover-caption {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+}
+
+/* Navigaatio */
+.main-nav {
+  margin-top: 0.75rem;
+  background: #084f8c;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0.3rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  max-width: 1100px;
+}
+
+.main-nav a {
+  display: block;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: #eaf6ff;
+  background: transparent;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  background: #ffffff;
+  color: #084f8c;
+}
+
+/* Sivun asettelu */
+.page-layout {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 1.5rem auto;
+  padding: 0 1rem 2rem;
+  gap: 1.5rem;
+}
+
+/* Sivupalkki */
+.sidebar {
+  flex: 0 0 260px;
+  max-width: 320px;
+}
+
+.sidebar-section {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.sidebar-section h2,
+.sidebar-section h3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+.plain-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plain-list li {
+  margin-bottom: 0.25rem;
+}
+
+.highlight {
+  font-weight: 600;
+}
+
+/* Pääsisältö */
+.content {
+  flex: 1;
+  min-width: min(100%, 320px);
+}
+
+.content > section,
+.content > article {
+  background: #ffffff;
+  padding: 1.3rem 1.4rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.intro-block h1 {
+  margin-top: 0;
+}
+
+.release-note {
+  font-weight: 600;
+  color: #0c6fbf;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.25rem;
+}
+
+.two-column h2 {
+  margin-top: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: #0c6fbf;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #084f8c;
+  text-decoration: none;
+}
+
+.story-block p:last-child {
+  margin-bottom: 0;
+}
+
+/* Alaosa */
+.site-footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #334455;
+  padding: 1rem 0 1.5rem;
+}
+
+/* Mobiilissa */
+@media (max-width: 800px) {
+  .header-top {
+    align-items: flex-start;
+  }
+
+  .page-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+
+  .two-column {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .main-nav ul {
+    justify-content: flex-start;
+  }
+}
