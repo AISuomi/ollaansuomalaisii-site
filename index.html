@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ollaan suomalaisii – Rantamäen perheyhtye</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Automaattinen siirto 3 sekunnin kuluttua varsinaiselle sivulle -->
+  <meta http-equiv="refresh" content="3; url=etusivu.html">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #ffffff url("LIPPUKUVA_TÄHÄN.gif") repeat;
+      /* jos et halua koko ruudun täyteen lippuja:
+         poista url(...) ja käytä vain esim. taustaväriä */
+      color: #102030;
+    }
+
+    .overlay {
+      min-height: 100vh;
+      background: rgba(255,255,255,0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .intro-card {
+      max-width: 520px;
+      text-align: center;
+      background: #ffffff;
+      padding: 1.5rem 1.75rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    }
+
+    .cover {
+      width: 260px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      margin: 0.5rem 0 0.25rem;
+      font-size: 1.6rem;
+    }
+
+    .subtitle {
+      margin: 0 0 1rem;
+      font-size: 0.95rem;
+    }
+
+    p {
+      margin: 0 0 0.7rem;
+      font-size: 0.95rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1.2rem;
+      border-radius: 999px;
+      background: #0c6fbf;
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background: #084f8c;
+    }
+
+    .note {
+      margin-top: 0.4rem;
+      font-size: 0.8rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="intro-card">
+      <!-- kansikuva -->
+      <img src="KANSI_KUVA.jpg" alt="Rantamäen perheyhtye" class="cover">
+
+      <h1>Rantamäen perheyhtye</h1>
+      <p class="subtitle">Haitarimusiikkia ja lauluja elämästä – omia sävelmiä ja sanoituksia.</p>
+
+      <p>
+        Tervetuloa <strong>Ollaan suomalaisii</strong> -sivustolle. Sivuilta löydät
+        perheyhtyeen äänitteet, nuotit ja tarinoita suomalaisesta elämästä.
+      </p>
+
+      <a href="etusivu.html" class="button">Jatka sivustoon</a>
+
+      <p class="note">Siirryt sivustolle automaattisesti hetken kuluttua.</p>
+    </div>
+  </div>
+</body>
+</html>
