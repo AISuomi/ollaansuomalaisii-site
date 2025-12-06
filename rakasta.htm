@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Rakasta, kärsi ja unhoita – Rantamäen sisarukset</title>
+
+  <meta name="keywords" content="Martta Rantamäki, Rantamäen sisarukset, Merja, Margit, Anna-Liisa, haitari, kansanmusiikki, omakustanne, Rakasta kärsi ja unhoita">
+  <meta name="description" content="Rakasta, kärsi ja unhoita – Rantamäen sisarusten triolevy, jonka kappaleista puolet Martta-äidin käsialaa ja sovitukset Reino 'Rene' Karppiselta.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Yhteiset tyylit -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Sivukohtaiset tyylit -->
+  <style>
+    body.rakasta-page {
+      background: #0c84b8; /* sama moderni sininen kuin muissa */
+      color: #102030;
+    }
+
+    .album-wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem 1rem 3rem;
+    }
+
+    .album-card {
+      max-width: 900px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      display: grid;
+      grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+
+    .album-cover img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .album-text p {
+      margin: 0 0 0.75rem 0;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+
+    .price-block {
+      font-weight: bold;
+      margin-top: 0.6rem;
+    }
+
+    .order-link {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      background: #0c6fbf;
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .order-link:hover {
+      background: #084f8c;
+    }
+
+    .small-print {
+      font-size: 0.75rem;
+      color: #666;
+      margin-top: 0.8rem;
+    }
+
+    @media (max-width: 720px) {
+      .album-card {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body class="rakasta-page">
+  <div class="album-wrapper">
+    <main class="album-card">
+
+      <div class="album-cover">
+        <a href="tilaus.htm">
+          <img src="Kuvat/rakasta.gif" alt="Rakasta, kärsi ja unhoita – kansi">
+        </a>
+      </div>
+
+      <section class="album-text">
+        <p>
+          <strong>”Rakasta, kärsi ja unhoita” – Rantamäen sisarukset.</strong>
+        </p>
+
+        <p>
+          Julkaisimme trioäänitteen, jossa säestäjänä toimii studio-orkesteri.  
+          Äänitteen 14 kappaleesta puolet on Martta-äidin käsialaa.
+        </p>
+
+        <p>
+          Sovitusten tekijänä nuori mies <strong>Reino ”Rene” Karppinen (Kajaani)</strong>,  
+          jonka kappale <em>”Vanha mies”</em> löytyy myös kasetilta.
+        </p>
+
+        <p class="price-block">
+          Tarjoushintaan 6e
+        </p>
+
+        <a class="order-link" href="tilaus.htm">Tilaa tästä</a>
+
+        <p class="small-print">
+          (Tilaukset avautuvat uuteen tilauslomakkeeseen.)
+        </p>
+
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
