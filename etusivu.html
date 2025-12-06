@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Tärkeä kuvaus hakukoneille -->
-  <meta name="description" content="Rantamäen perheyhtye – Martta ja Otto Rantamäen perhe, Merja, Liisa, Anna-Liisa ja Margit. Omakustannelevyt Ollaan suomalaisii, Sanoin ja sävelin, Joululauluja, Lauluja elämälle, Rakasta kärsi ja unhoita, Rantamäen Sisarukset ja White Angels.">
+  <meta name="description" content="Rantamäen perheyhtye – Martta ja Otto Rantamäen perhe, Merja, Liisa, Anna-Liisa ja Margit. Omakustannelevyt Ollaan suomalaisii, Sanoin ja sävelin, Joululauluja, Lauluja elämälle, Rakasta kärsi ja unhoita, Muistojen Taikaa.">
 
   <!-- Open Graph some-jakoa varten -->
   <meta property="og:title" content="Ollaan suomalaisii – Rantamäen perheyhtye">
-  <meta property="og:description" content="Haitarimusiikkia ja lauluja elämästä – Rantamäen perheyhtyeen omat sävellykset ja levyt: Ollaan suomalaisii, Sanoin ja sävelin, Joululauluja, Lauluja elämälle, Rakasta kärsi ja unhoita, Rantamäen Sisarukset, White Angels.">
+  <meta property="og:description" content="Haitarimusiikkia ja lauluja elämästä – Rantamäen perheyhtyeen omat sävellykset ja levyt: Ollaan suomalaisii, Sanoin ja sävelin, Joululauluja, Lauluja elämälle, Rakasta kärsi ja unhoita, Muistojen Taikaa.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="Kuvat/vedos.jpg">
   <meta property="og:image:alt" content="Rantamäen perheyhtye">
@@ -18,11 +18,11 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="home-page">
   <header class="site-header">
     <div class="header-top">
       <div class="otto-box">
-        <img src="KUVAN_POLKU_TÄHÄN.jpg" alt="Otto Rantamäki" class="otto-photo">
+        <img src="Kuvat/otto.jpg" alt="Otto Rantamäki" class="otto-photo">
         <div class="otto-text">
           <p class="rip-line">R.I.P Otto Rantamäki</p>
           <p class="dates">27.06.1926 – 19.04.2011</p>
@@ -41,21 +41,27 @@
       </div>
 
       <div class="cover-box">
-        <img src="KANSI_KUVA.jpg" alt="Rantamäen perheyhtye" class="cover-photo">
+        <img src="Kuvat/vedos.jpg" alt="Rantamäen perheyhtye" class="cover-photo">
         <p class="cover-caption">Rantamäen perheyhtye</p>
       </div>
     </div>
 
     <nav class="main-nav">
       <ul>
-        <li><a href="index.html" class="active">Etusivu</a></li>
-        <li><a href="ollaan_suomalaisii.htm">Ollaan Suomalaisii</a></li>
-        <li><a href="sanoja_ja_savelin.htm">Sanoin ja sävelin</a></li>
+        <!-- Etusivu: tämä sivu -->
+        <li><a href="etusivu.html" class="active">Etusivu</a></li>
+
+        <!-- Levyjen sivut, KORJATUT TIEDOSTONIMET -->
+        <li><a href="ollaansuomalaisii.htm">Ollaan suomalaisii</a></li>
+        <li><a href="sanoinjasavelin.htm">Sanoin ja sävelin</a></li>
         <li><a href="joululauluja.htm">Joululauluja</a></li>
-        <li><a href="lauluja_elamalle.htm">Lauluja elämälle</a></li>
-        <li><a href="rakasta_karsi_ja_unohda.htm">Rakasta, kärsi ja unhoita</a></li>
-        <li><a href="tilaus.htm">Tilaa äänitteitä & nuotteja</a></li>
-        <li><a href="palaute.htm">Palaute & yhteystiedot</a></li>
+        <li><a href="laulujaelamalle.htm">Lauluja elämälle</a></li>
+        <li><a href="rakasta.htm">Rakasta, kärsi ja unhoita</a></li>
+        <li><a href="muistojentaikaa.htm">Muistojen Taikaa</a></li>
+
+        <!-- Tilaukset & palaute -->
+        <li><a href="tilaus.htm">Tilaa äänitteitä &amp; nuotteja</a></li>
+        <li><a href="palaute.htm">Palaute &amp; yhteystiedot</a></li>
       </ul>
     </nav>
   </header>
@@ -73,14 +79,13 @@
       <section class="sidebar-section">
         <h3>Kieli</h3>
         <ul class="plain-list">
-          <li><a href="index.html">Suomi</a></li>
+          <li><a href="etusivu.html">Suomi</a></li>
           <li><a href="english.htm">Change language</a></li>
-          <!-- lisää kieliversiot jos on -->
         </ul>
       </section>
 
       <section class="sidebar-section">
-        <h3>Tilaukset & palaute</h3>
+        <h3>Tilaukset &amp; palaute</h3>
         <p>
           Voit tilata äänitteitä ja nuotteja tai lähettää palautetta:
         </p>
@@ -101,10 +106,9 @@
         <p class="release-note">
           Julkaistu 26.6.2012
         </p>
-        <!-- Tähän voit liittää nykyisen etusivun johdantotekstin:
-             kuka soittaa, missä on esiintytty, mitä levyltä löytyy jne. -->
         <p>
-          <!-- NYKYINEN TEKSTISI TÄHÄN -->
+          Rantamäen perheyhtye on julkaissut useita kokoelmia, joissa on
+          Martta-äidin sävellyksiä ja sanoituksia – tarinoita suomalaisesta elämästä.
         </p>
       </article>
 
@@ -112,20 +116,19 @@
         <div>
           <h2>Äänitteet</h2>
           <p>
-            Rantamäen perheyhtye on julkaissut useita kokoelmia, joissa on
-            Martta-äidin sävellyksiä ja sanoituksia – tarinoita suomalaisesta elämästä.
+            Näiltä sivuilta löydät tarkemmat tiedot Rantamäen perheyhtyeen äänitteistä.
           </p>
           <ul>
-            <li>Ollaan suomalaisii</li>
-            <li>Sanoin ja sävelin I–III</li>
-            <li>Joululauluja</li>
-            <li>Lauluja Elämälle</li>
-            <li>Rakasta, kärsi ja unhoita</li>
-            <li>Muistojen Taikaa</li>
+            <li><a href="ollaansuomalaisii.htm">Ollaan suomalaisii</a></li>
+            <li><a href="sanoinjasavelin.htm">Sanoin ja sävelin I–III</a></li>
+            <li><a href="joululauluja.htm">Joululauluja</a></li>
+            <li><a href="laulujaelamalle.htm">Lauluja elämälle</a></li>
+            <li><a href="rakasta.htm">Rakasta, kärsi ja unhoita</a></li>
+            <li><a href="muistojentaikaa.htm">Muistojen Taikaa</a></li>
           </ul>
           <p>
-            Katso tarkemmat kappaleluettelot levyjen omilta sivuilta ja
-            <a href="tilaus.htm">tee tilaus</a>.
+            Voit kuunnella kappaleiden introt levyjen omilta sivuilta ja
+            <a href="tilaus.htm">tehdä tilauksen</a>.
           </p>
         </div>
 
@@ -146,10 +149,14 @@
 
       <section class="story-block">
         <h2>Tarinoita elämästä – haitarin ja laulun siivin</h2>
-        <!-- Tähän voit liittää nykyisen pitkän tekstisi hieman jaoteltuna
-             muutamaan kappaleeseen. -->
         <p>
-          <!-- NYKYINEN PITKÄ TEKSTISI TÄHÄN, JAETTUNA KAPPALEISIIN -->
+          Rantamäen perheyhtyeen musiikki kertoo suomalaisesta arjesta ja juhlasta,
+          lapsuuden muistoista, vuodenajoista ja elämän käännekohdista.
+        </p>
+        <p>
+          Keikoilla ja äänitteillä on vuosien varrella kuultu niin iloisia
+          humpan ja polkan rytmejä kuin herkempiä valsseja ja tangoja – kaikki
+          Martta-äidin ja perheen jäsenten omia sävellyksiä ja sanoituksia.
         </p>
       </section>
     </section>
@@ -157,8 +164,8 @@
 
   <footer class="site-footer">
     <p>
-      © Rantamäen perheyhtye – Ollaan suomalaisii  
-      · Yhteystiedot ja tilaukset: 
+      © Rantamäen perheyhtye – Ollaan suomalaisii ·
+      Yhteystiedot ja tilaukset:
       <a href="mailto:me@ollaansuomalaisii.fi">me@ollaansuomalaisii.fi</a>
     </p>
   </footer>
