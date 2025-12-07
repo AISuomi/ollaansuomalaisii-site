@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Orders – Family ensemble Rantamäki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Order records and sheet music from family ensemble Rantamäki.">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    function updateOrderTotal() {
+      var rows = document.querySelectorAll(".product-qty");
+      var total = 0;
+      rows.forEach(function (input) {
+        var qty = parseFloat(input.value || "0");
+        var price = parseFloat(input.getAttribute("data-price") || "0");
+        if (!isNaN(qty) && !isNaN(price)) {
+          total += qty * price;
+        }
+      });
+      var totalElement = document.getElementById("order-total");
+      if (totalElement) {
+        totalElement.textContent = total.toFixed(2) + " €";
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".product-qty").forEach(function (input) {
+        input.addEventListener("input", updateOrderTotal);
+      });
+      updateOrderTotal();
+    });
+  </script>
+</head>
+
+<body>
+  <main class="order-page">
+    <section class="order-intro">
+      <h1>Orders – records &amp; sheet music</h1>
+      <p>
+        You can order records and songbooks from family ensemble Rantamäki using this form.
+        We will reply by e-mail with payment details (bank transfer) and postage costs.
+      </p>
+      <p>
+        If you prefer, you can also write directly to
+        <a href="mailto:me@ollaansuomalaisii.fi">me@ollaansuomalaisii.fi</a>.
+      </p>
+    </section>
+
+    <section class="order-form">
+      <form action="https://formspree.io/f/mdkqdpbg" method="POST">
+        <fieldset class="order-fieldset">
+          <legend>Your contact information</legend>
+
+          <div class="field-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" required>
+          </div>
+
+          <div class="field-row">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required>
+          </div>
+
+          <div class="field-row">
+            <label for="address">Postal address</label>
+            <input id="address" name="address" placeholder="Street, postal code, town, country">
+          </div>
+
+          <div class="field-row">
+            <label for="phone">Phone (optional)</label>
+            <input id="phone" name="phone">
+          </div>
+        </fieldset>
+
+        <fieldset class="order-fieldset">
+          <legend>Records</legend>
+
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Ollaan suomalaisii</div>
+              <div class="product-note">CD, price 20 €</div>
+            </div>
+            <div class="product-controls">
+              <label>
+                Qty
+                <input type="number" min="0" value="0"
+                  name="ollaansuomalaisii_qty"
+                  class="product-qty"
+                  data-price="20">
+              </label>
+            </div>
+          </div>
+
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Sanoin ja sävelin (I–III)</div>
+              <div class="product-note">Recordings (CD / tape)</div>
+            </div>
+            <div class="product-controls">
+              <label>
+                Qty
+                <input type="number" min="0" value="0"
+                  name="sanoinjasavelin_recordings_qty"
+                  class="product-qty"
+                  data-price="15">
+              </label>
+            </div>
+          </div>
+
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Joululauluja</div>
+              <div class="product-note">Christmas songs – CD or tape</div>
+            </div>
+            <div class="product-controls">
+              <label>
+                Qty
+                <input type="number" min="0" value="0"
+                  name="joululauluja_qty"
+                  class="product-qty"
+                  data-price="15">
+              </label>
+            </div>
+          </div>
+
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Lauluja Elämälle</div>
+              <div class="product-note">Tape only</div>
+            </div>
+            <div class="product-controls">
+              <label>
+                Qty
+                <input type="number" min="0" value="0"
+                  name="laulujaelamalle_qty"
+                  class="product-qty"
+                  data-price="10">
+              </label>
+            </div>
+          </div>
+
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Rakasta, kärsi ja unhoita</div>
+              <div class="product-note">Trio tape</div>
+            </div>
+            <div class="product-controls">
+              <label>
+                Qty
+                <input type="number" min="0" value="0"
+                  name="rakasta_qty"
+                  class="product-qty"
+                  data-price="6">
+              </label>
+            </div>
+          </div>
+
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Muistojen Taikaa</div>
+              <div class="product-note">Newest CD</div>
+            </div>
+            <div class="product-controls">
+              <label>
+                Qty
+                <input type="number" min="0" value="0"
+                  name="muistojentaikaa_qty"
+                  class="product-qty"
+                  data-price="20">
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="order-fieldset">
+          <legend>Songbooks &amp; sheet music</legend>
+
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Sanoin ja sävelin I–III – songbooks</div>
+              <div class="product-note">Please write which part(s) you wish.</div>
+            </div>
+            <div class="product-controls">
+              <label>
+                Qty
+                <input type="number" min="0" value="0"
+                  name="songbooks_qty"
+                  class="product-qty"
+                  data-price="15">
+              </label>
+            </div>
+          </div>
+
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Joululauluja – songbook</div>
+              <div class="product-note">Christmas songbook</div>
+            </div>
+            <div class="product-controls">
+              <label>
+                Qty
+                <input type="number" min="0" value="0"
+                  name="joululauluja_songbook_qty"
+                  class="product-qty"
+                  data-price="6">
+              </label>
+            </div>
+          </div>
+
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Single songs</div>
+              <div class="product-note">Write the titles in the message field below.</div>
+            </div>
+            <div class="product-controls">
+              <label>
+                Approx. qty
+                <input type="number" min="0" value="0"
+                  name="single_songs_qty"
+                  class="product-qty"
+                  data-price="2">
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="order-total-box">
+          Estimated total:
+          <span id="order-total">0.00 €</span>
+          <div class="order-total-note">
+            Postage and exact prices will be confirmed by e-mail.
+          </div>
+        </div>
+
+        <fieldset class="order-fieldset">
+          <legend>Additional information</legend>
+          <textarea name="message" rows="4"
+            placeholder="For example: preferred format (CD/tape), songbook parts, questions or other wishes."></textarea>
+        </fieldset>
+
+        <div class="order-actions">
+          <button type="submit">Send order</button>
+          <button type="reset" class="secondary">Clear form</button>
+        </div>
+
+        <p class="order-note">
+          After sending the form you should receive a confirmation e-mail within a few days.
+          If nothing arrives, please contact us directly: <a href="mailto:me@ollaansuomalaisii.fi">me@ollaansuomalaisii.fi</a>.
+        </p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
