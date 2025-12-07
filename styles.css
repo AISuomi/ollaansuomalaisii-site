@@ -449,3 +449,37 @@ a:hover {
   color: #555;
   margin-top: 0.2rem;
 }
+
+.in-memoriam-box {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background: #ffffffcc; /* kevyt läpikuultava valkoinen */
+  text-align: center;
+}
+
+.in-memoriam {
+  font-family: "UnifrakturCook", serif;
+  font-size: 1.45rem;
+  color: #000;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.in-memoriam .ornament {
+  font-size: 1.4rem;
+  padding: 0 0.35rem;
+}
+
+@media (max-width: 600px) {
+  .in-memoriam-box {
+    padding: 0.35rem 0.6rem;
+  }
+  .in-memoriam {
+    font-size: 1.2rem;
+  }
+  .in-memoriam .ornament {
+    font-size: 1.2rem;
+  }
+}
