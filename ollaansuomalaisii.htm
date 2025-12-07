@@ -3,17 +3,13 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>Ollaan Suomalaisii – Rantamäki Martta, Otto, Anna-Liisa</title>
-
-  <meta name="keywords" content="Martta Rantamäki, Otto Rantamäki, Anna-Liisa, kansanmusiikki, haitari, omakustanne, Ollaan Suomalaisii">
-  <meta name="description" content="Ollaan Suomalaisii – Martta ja Otto Rantamäen sekä Anna-Liisan levy. Kuuntele introt kappaleista ja tilaa äänite.">
-
+  <title>Ollaan suomalaisii – Rantamäen perheyhtye</title>
+  <meta name="keywords" content="Ollaan suomalaisii, Martta Rantamäki, Otto Rantamäki, Anna-Liisa, haitari, kansanmusiikki, omakustanne">
+  <meta name="description" content="Ollaan suomalaisii – Rantamäen perheyhtyeen levy, jossa 20 kappaletta suomalaisesta elämästä. Kuuntele introt ja tilaa levy.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Sivuston yhteiset tyylit -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Vain tämän sivun lisätyylit -->
   <style>
     body.ollaansuomalaisii-page {
       background: #0c84b8;
@@ -34,31 +30,21 @@
       background: #ffffff;
       border-radius: 8px;
       padding: 1.5rem;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
       display: grid;
       grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
       gap: 1.5rem;
-    }
-
-    .album-cover {
-      text-align: center;
+      margin-top: 1rem;
     }
 
     .album-cover img {
       max-width: 100%;
       height: auto;
       border-radius: 4px;
-      display: block;
-      margin: 0 auto;
-    }
-
-    .album-text p {
-      margin: 0 0 0.75rem 0;
-      line-height: 1.5;
-      font-size: 0.95rem;
     }
 
     .listen-note {
+      margin-bottom: 0.75rem;
       font-size: 0.95rem;
     }
 
@@ -71,6 +57,12 @@
 
     .track-list li + li {
       margin-top: 0.2rem;
+    }
+
+    .album-text p {
+      margin: 0 0 0.75rem 0;
+      line-height: 1.5;
+      font-size: 0.95rem;
     }
 
     .price-block {
@@ -90,10 +82,8 @@
       font-size: 0.95rem;
     }
 
-    .order-link:hover,
-    .order-link:focus {
+    .order-link:hover {
       background: #084f8c;
-      text-decoration: none;
     }
 
     .small-print {
@@ -111,23 +101,63 @@
 </head>
 
 <body class="ollaansuomalaisii-page">
+
+  <header class="site-header">
+    <div class="header-top">
+      <div class="otto-box">
+        <img src="Kuvat/Otto.jpg" alt="Otto Rantamäki" class="otto-photo">
+        <div class="otto-text">
+          <p class="rip-line">R.I.P Otto Rantamäki</p>
+          <p class="dates">27.06.1926 – 19.04.2011</p>
+        </div>
+      </div>
+
+      <div class="title-box">
+        <div class="flags-row">
+          <span class="flag">🇫🇮</span>
+          <span class="site-title">Rantamäen perheyhtye</span>
+          <span class="flag">🇫🇮</span>
+        </div>
+        <p class="subtitle">Haitarimusiikkia ja lauluja elämästä – omia sävelmiä ja sanoituksia</p>
+      </div>
+
+      <div class="cover-box">
+        <img src="Kuvat/vedos.jpg" class="cover-photo" alt="">
+        <p class="cover-caption">Rantamäen perheyhtye</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="etusivu.html">Etusivu</a></li>
+        <li><a href="ollaansuomalaisii.htm" class="active">Ollaan Suomalaisii</a></li>
+        <li><a href="sanoinjasavelin.htm">Sanoin ja sävelin</a></li>
+        <li><a href="joululauluja.htm">Joululauluja</a></li>
+        <li><a href="laulujaelamalle.htm">Lauluja elämälle</a></li>
+        <li><a href="rakasta.htm">Rakasta, kärsi ja unhoita</a></li>
+        <li><a href="muistojentaikaa.htm">Muistojentaikaa</a></li>
+        <li><a href="tilaus.htm">Tilaa</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <div class="album-wrapper">
     <main class="album-card">
 
       <div class="album-cover">
         <a href="tilaus.htm">
-          <img src="Kuvat/image001.gif" alt="Ollaan Suomalaisii – kansi">
+          <img src="Kuvat/image001.gif" alt="Ollaan suomalaisii – kansi">
         </a>
       </div>
 
       <section class="album-text">
         <p class="listen-note">
-          Allaolevista linkeistä voit kuunnella introt. Lataus voi kestää hetken,
+          Allaolevista linkeistä voit kuunnella introt, hieman saattaa lataus kestää
           mutta hyväähän kannattaa vähän odottaakin.
         </p>
 
         <ul class="track-list">
-          <li><a href="Introt/01-Ollaan%20Suomalaisii.mp3" target="_blank">Ollaan Suomalaisii</a></li>
+          <li><a href="Introt/01-Ollaan%20Suomalaisii.mp3" target="_blank">Ollaan suomalaisii</a></li>
           <li><a href="Introt/02-Eraantynyt%20villitys.mp3" target="_blank">Erääntynyt villitys</a></li>
           <li><a href="Introt/03-Lapsuuden%20muistot.mp3" target="_blank">Lapsuuden muistot</a></li>
           <li><a href="Introt/04-Kesaisia%20muistoja.mp3" target="_blank">Kesäisiä muistoja</a></li>
@@ -162,5 +192,12 @@
 
     </main>
   </div>
+
+  <footer class="site-footer">
+    <p>
+      © Rantamäen perheyhtye – Ollaan suomalaisii · Yhteystiedot ja tilaukset:
+      <a href="mailto:me@ollaansuomalaisii.fi">me@ollaansuomalaisii.fi</a>
+    </p>
+  </footer>
 </body>
 </html>
