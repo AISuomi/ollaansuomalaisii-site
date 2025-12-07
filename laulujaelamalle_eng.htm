@@ -5,8 +5,7 @@
 
   <title>Lauluja Elämälle – Family ensemble Rantamäki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta name="description" content="Lauluja Elämälle – tape with songs by Martta Rantamäki.">
+  <meta name="description" content="Lauluja Elämälle – cassette with songs composed by Martta Rantamäki. Vocals by Anna-Liisa, Margit and Merja as soloists.">
 
   <link rel="stylesheet" href="styles.css">
 
@@ -28,23 +27,21 @@
       background: #ffffff;
       border-radius: 8px;
       padding: 1.5rem;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
       display: grid;
       grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
       gap: 1.5rem;
+      margin-top: 1rem;
     }
-    .album-cover { text-align: center; }
     .album-cover img {
       max-width: 100%;
       height: auto;
       border-radius: 4px;
-      display: block;
-      margin: 0 auto;
     }
     .album-text p {
       margin: 0 0 0.75rem 0;
-      line-height: 1.5;
       font-size: 0.95rem;
+      line-height: 1.5;
     }
     .price-block {
       font-weight: bold;
@@ -61,10 +58,8 @@
       font-weight: 600;
       font-size: 0.95rem;
     }
-    .order-link:hover,
-    .order-link:focus {
+    .order-link:hover {
       background: #084f8c;
-      text-decoration: none;
     }
     .small-print {
       font-size: 0.75rem;
@@ -78,6 +73,48 @@
 </head>
 
 <body class="lauluja-page">
+  <header class="site-header">
+    <div class="header-top">
+      <div class="otto-box">
+        <img src="Kuvat/otto.jpg" alt="Otto Rantamäki" class="otto-photo">
+        <div class="otto-text">
+          <p class="rip-line">R.I.P. Otto Rantamäki</p>
+          <p class="dates">27.06.1926 – 19.04.2011</p>
+        </div>
+      </div>
+
+      <div class="title-box">
+        <div class="flags-row">
+          <span class="flag">🇫🇮</span>
+          <span class="site-title">Family ensemble Rantamäki</span>
+          <span class="flag">🇫🇮</span>
+        </div>
+        <p class="subtitle">
+          Accordion music and songs about Finnish life – original melodies and lyrics
+        </p>
+      </div>
+
+      <div class="cover-box">
+        <img src="Kuvat/vedos.jpg" alt="Family ensemble Rantamäki" class="cover-photo">
+        <p class="cover-caption">Family ensemble Rantamäki</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="english.htm">Home</a></li>
+        <li><a href="ollaansuomalaisii_eng.htm">Ollaan suomalaisii</a></li>
+        <li><a href="sanoinjasavelin_eng.htm">Sanoin ja sävelin</a></li>
+        <li><a href="joululauluja_eng.htm">Joululauluja</a></li>
+        <li><a href="laulujaelamalle_eng.htm" class="active">Lauluja elämälle</a></li>
+        <li><a href="rakasta_eng.htm">Rakasta, kärsi ja unhoita</a></li>
+        <li><a href="muistojentaikaa_eng.htm">Muistojen Taikaa</a></li>
+        <li><a href="tilaus_eng.htm">Orders &amp; sheet music</a></li>
+        <li><a href="palaute_eng.htm">Feedback &amp; contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <div class="album-wrapper">
     <main class="album-card">
       <div class="album-cover">
@@ -88,22 +125,26 @@
 
       <section class="album-text">
         <p>
-          <strong>"Lauluja Elämälle"</strong> (Songs for Life) is currently available
-          as tape only. The tape includes melodies and lyrics by Martta Rantamäki.
-          Some lyrics are written by Eila Pöntisenaho, Reetta Suo, Ulla Perälä and
-          daughter Margit.
+          The recording <strong>“Lauluja Elämälle”</strong> (“Songs for Life”) is currently
+          available only as a cassette.
         </p>
 
         <p>
-          The vocal solos are sung by Anna-Liisa, Margit and Merja, with Martta &amp; Otto
-          on accordion.
+          The tape contains melodies and lyrics by Martta. Some of the lyrics are also written
+          by the same poets as on other records: Eila Pöntisenaho, Reetta Suo,
+          Ulla Perälä and daughter Margit.
+        </p>
+
+        <p>
+          The vocal parts are sung as solos by Anna-Liisa, Margit and Merja, with
+          Martta &amp; Otto on accordions.
         </p>
 
         <p class="price-block">
-          Price: 10 € (tape)
+          Price: 10 € (cassette)
         </p>
 
-        <a class="order-link" href="tilaus_eng.htm">Order this tape</a>
+        <a class="order-link" href="tilaus_eng.htm">Order this cassette</a>
 
         <p class="small-print">
           Orders are handled via the English order form.
@@ -111,5 +152,12 @@
       </section>
     </main>
   </div>
+
+  <footer class="site-footer">
+    <p>
+      © Family ensemble Rantamäki · Orders &amp; contact:
+      <a href="mailto:me@ollaansuomalaisii.fi">me@ollaansuomalaisii.fi</a>
+    </p>
+  </footer>
 </body>
 </html>
