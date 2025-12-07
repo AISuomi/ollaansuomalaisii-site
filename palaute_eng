@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback &amp; contact – Family ensemble Rantamäki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Contact family ensemble Rantamäki – feedback, questions and orders.">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main class="order-page">
+    <section class="order-intro">
+      <h1>Feedback &amp; contact</h1>
+      <p>
+        We are happy to receive feedback about the music, questions about records and sheet music
+        or memories related to the songs.
+      </p>
+      <p>
+        You can contact us by e-mail:
+      </p>
+      <p class="highlight">
+        <a href="mailto:me@ollaansuomalaisii.fi">me@ollaansuomalaisii.fi</a>
+      </p>
+      <p>
+        If you wish to place an order, please use the
+        <a href="tilaus_eng.htm">order form</a> so that we get your address and details correctly.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
