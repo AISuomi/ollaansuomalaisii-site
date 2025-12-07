@@ -2,24 +2,22 @@
 <html lang="fi">
 <head>
   <meta charset="UTF-8">
-  <title>Joululauluja - Rantamäki Martta, Otto, Merja, Margit, Anna-Liisa</title>
+  <title>Joululauluja – Rantamäen perheyhtye</title>
 
-  <meta name="keywords" content="Martta, Rantamäki, Otto, Merja, Liisa, Anna-Liisa, Margit, haitari, kansanmusiikki, omakustanne, sanoin ja sävelin, joululauluja, ollaan suomalaisii, rakasta kärsi unhoita, lauluja elämälle, Joulua odotellessa, Joulun rauha, Kodittoman joulu, Joulupukin kuperkeikka, Jouluprinsessa, Mummon joululaulu, Tähdet kukkii taivaan maljakoissa, Lapsuusjoulu, Joululle, Joulutunnelma">
+  <meta name="keywords" content="Joululauluja, Martta Rantamäki, Otto Rantamäki, Anna-Liisa, Merja, Margit, joululaulut, haitari, kansanmusiikki">
   <meta name="description" content="Martta ja Otto Rantamäen Joululauluja – cd & kasetti, sekä Joululauluja-nuottikirja. Kuuntele introt kappaleista Joulua odotellessa, Joulun rauha, Kodittoman joulu, Joulupukin kuperkeikka, Jouluprinsessa, Mummon joululaulu, Tähdet kukkii taivaan maljakoissa, Lapsuusjoulu, Joululle ja Joulutunnelma.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Sivuston yhteiset tyylit -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Vain tämän sivun lisätyylit -->
   <style>
     body.joululauluja-page {
-      background: #b0002a; /* hillitty joulunpunainen */
+      background: #b0002a;
       color: #102030;
     }
 
     .album-wrapper {
-      min-height: calc(100vh - 180px); /* huomioi header+footer */
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -36,18 +34,13 @@
       display: grid;
       grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
       gap: 1.5rem;
-    }
-
-    .album-cover {
-      text-align: center;
+      margin-top: 1rem;
     }
 
     .album-cover img {
       max-width: 100%;
       height: auto;
       border-radius: 4px;
-      display: block;
-      margin: 0 auto;
     }
 
     .listen-note {
@@ -89,10 +82,8 @@
       font-size: 0.95rem;
     }
 
-    .order-link:hover,
-    .order-link:focus {
+    .order-link:hover {
       background: #8a001f;
-      text-decoration: none;
     }
 
     .small-print {
@@ -110,11 +101,11 @@
 </head>
 
 <body class="joululauluja-page">
-  <!-- SAMA HEADER KUIN ETUSIVULLA -->
+
   <header class="site-header">
     <div class="header-top">
       <div class="otto-box">
-        <img src="Kuvat/otto.jpg" alt="Otto Rantamäki" class="otto-photo">
+        <img src="Kuvat/Otto.jpg" alt="Otto Rantamäki" class="otto-photo">
         <div class="otto-text">
           <p class="rip-line">R.I.P Otto Rantamäki</p>
           <p class="dates">27.06.1926 – 19.04.2011</p>
@@ -127,13 +118,11 @@
           <span class="site-title">Rantamäen perheyhtye</span>
           <span class="flag">🇫🇮</span>
         </div>
-        <p class="subtitle">
-          Haitarimusiikkia ja lauluja elämästä – omia sävelmiä ja sanoituksia
-        </p>
+        <p class="subtitle">Haitarimusiikkia ja lauluja elämästä – omia sävelmiä ja sanoituksia</p>
       </div>
 
       <div class="cover-box">
-        <img src="Kuvat/vedos.jpg" alt="Rantamäen perheyhtye" class="cover-photo">
+        <img src="Kuvat/vedos.jpg" class="cover-photo" alt="">
         <p class="cover-caption">Rantamäen perheyhtye</p>
       </div>
     </div>
@@ -141,21 +130,19 @@
     <nav class="main-nav">
       <ul>
         <li><a href="etusivu.html">Etusivu</a></li>
-        <li><a href="ollaansuomalaisii.htm">Ollaan suomalaisii</a></li>
+        <li><a href="ollaansuomalaisii.htm">Ollaan Suomalaisii</a></li>
         <li><a href="sanoinjasavelin.htm">Sanoin ja sävelin</a></li>
         <li><a href="joululauluja.htm" class="active">Joululauluja</a></li>
         <li><a href="laulujaelamalle.htm">Lauluja elämälle</a></li>
         <li><a href="rakasta.htm">Rakasta, kärsi ja unhoita</a></li>
-        <li><a href="muistojentaikaa.htm">Muistojen Taikaa</a></li>
-        <li><a href="tilaus.htm">Tilaa äänitteitä &amp; nuotteja</a></li>
-        <li><a href="palaute.htm">Palaute &amp; yhteystiedot</a></li>
+        <li><a href="muistojentaikaa.htm">Muistojentaikaa</a></li>
+        <li><a href="tilaus.htm">Tilaa</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- VARSINAINEN LEVY-SISÄLTÖ -->
-  <main class="album-wrapper">
-    <article class="album-card">
+  <div class="album-wrapper">
+    <main class="album-card">
       <div class="album-cover">
         <a href="tilaus.htm">
           <img src="Kuvat/joululauluja.gif" alt="Joululauluja – kansi">
@@ -205,14 +192,12 @@
           (Tilaukset avautuvat uuteen tilauslomakkeeseen.)
         </p>
       </section>
-    </article>
-  </main>
+    </main>
+  </div>
 
-  <!-- YHTEINEN FOOTER -->
   <footer class="site-footer">
     <p>
-      © Rantamäen perheyhtye – Ollaan suomalaisii ·
-      Yhteystiedot ja tilaukset:
+      © Rantamäen perheyhtye – Ollaan suomalaisii · Yhteystiedot ja tilaukset:
       <a href="mailto:me@ollaansuomalaisii.fi">me@ollaansuomalaisii.fi</a>
     </p>
   </footer>
