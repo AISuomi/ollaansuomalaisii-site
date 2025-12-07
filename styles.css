@@ -484,35 +484,39 @@ a:hover {
   }
   
 .memoriam-box {
-  background: rgba(255, 255, 255, 0.15);
-  padding: 12px 20px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.10);
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   text-align: center;
-  margin: 0 auto 20px;
-  max-width: 380px;
+  margin: 0 auto 18px;
+  max-width: 320px;
 }
 
 .memoriam-top {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
 }
 
 .note-symbol {
-  font-size: 2.4rem;        
+  font-size: 1.9rem;   /* aiemmin 2.4rem */
   line-height: 1;
+  font-weight: 400;
+  opacity: 0.9;
+  transform: translateY(2px); /* nostetaan hieman että osuu keskelle */
 }
 
 .memoriam-title {
   font-family: "UnifrakturCook", serif;
-  font-size: 1.8rem;
-  margin-top: 4px;
+  font-size: 1.4rem;  /* aiemmin 1.8rem */
+  margin-top: 0;
+  line-height: 1.2;
 }
 
 .memoriam-names {
   margin-top: 6px;
-  font-size: 1.1rem;
+  font-size: 1rem;   /* aiemmin 1.1rem */
   font-family: "Georgia", "Times New Roman", serif;
 }
