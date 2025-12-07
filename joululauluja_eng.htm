@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Joululauluja – Family ensemble Rantamäki</title>
 
-  <meta name="description" content="Joululauluja – Christmas songs by Martta and Otto Rantamäki. Listen to samples and order the record or songbook.">
+  <title>Joululauluja – Family ensemble Rantamäki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Joululauluja – Christmas songs by Martta and Otto Rantamäki. CD & cassette and a separate songbook. Listen to samples and order.">
 
   <link rel="stylesheet" href="styles.css">
 
@@ -27,18 +27,16 @@
       background: #fff;
       border-radius: 8px;
       padding: 1.5rem;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
       display: grid;
       grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
       gap: 1.5rem;
+      margin-top: 1rem;
     }
-    .album-cover { text-align: center; }
     .album-cover img {
       max-width: 100%;
       height: auto;
       border-radius: 4px;
-      display: block;
-      margin: 0 auto;
     }
     .listen-note {
       margin-bottom: 0.75rem;
@@ -50,7 +48,9 @@
       margin: 0 0 1.25rem 0;
       font-size: 0.95rem;
     }
-    .track-list li + li { margin-top: 0.2rem; }
+    .track-list li + li {
+      margin-top: 0.2rem;
+    }
     .album-text p {
       margin: 0 0 0.75rem 0;
       line-height: 1.5;
@@ -88,6 +88,48 @@
 </head>
 
 <body class="joululauluja-page">
+  <header class="site-header">
+    <div class="header-top">
+      <div class="otto-box">
+        <img src="Kuvat/otto.jpg" alt="Otto Rantamäki" class="otto-photo">
+        <div class="otto-text">
+          <p class="rip-line">R.I.P. Otto Rantamäki</p>
+          <p class="dates">27.06.1926 – 19.04.2011</p>
+        </div>
+      </div>
+
+      <div class="title-box">
+        <div class="flags-row">
+          <span class="flag">🇫🇮</span>
+          <span class="site-title">Family ensemble Rantamäki</span>
+          <span class="flag">🇫🇮</span>
+        </div>
+        <p class="subtitle">
+          Accordion music and songs about Finnish life – original melodies and lyrics
+        </p>
+      </div>
+
+      <div class="cover-box">
+        <img src="Kuvat/vedos.jpg" alt="Family ensemble Rantamäki" class="cover-photo">
+        <p class="cover-caption">Family ensemble Rantamäki</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="english.htm">Home</a></li>
+        <li><a href="ollaansuomalaisii_eng.htm">Ollaan suomalaisii</a></li>
+        <li><a href="sanoinjasavelin_eng.htm">Sanoin ja sävelin</a></li>
+        <li><a href="joululauluja_eng.htm" class="active">Joululauluja</a></li>
+        <li><a href="laulujaelamalle_eng.htm">Lauluja elämälle</a></li>
+        <li><a href="rakasta_eng.htm">Rakasta, kärsi ja unhoita</a></li>
+        <li><a href="muistojentaikaa_eng.htm">Muistojen Taikaa</a></li>
+        <li><a href="tilaus_eng.htm">Orders &amp; sheet music</a></li>
+        <li><a href="palaute_eng.htm">Feedback &amp; contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <div class="album-wrapper">
     <main class="album-card">
       <div class="album-cover">
@@ -98,13 +140,8 @@
 
       <section class="album-text">
         <p class="listen-note">
-          Below you can listen to short samples of the songs. Loading may take a moment.
-        </p>
-
-        <p>
-          <strong>Joululauluja</strong> (Christmas songs) is a collection of Martta’s
-          own melodies. Lyrics are by Martta and also by Eila Pöntisenaho, Reetta Suo,
-          Ulla Perälä and daughter Margit.
+          Below you can listen to short samples from the Christmas record.
+          Loading may take a little while.
         </p>
 
         <ul class="track-list">
@@ -121,19 +158,23 @@
         </ul>
 
         <p>
-          The songs are performed as a trio by Anna-Liisa, Margit and Merja with
-          Martta &amp; Otto on accordions.
+          <strong>Joululauluja</strong> (CD &amp; cassette) contains melodies by Martta.
+          The lyrics are written by Martta and also by Eila Pöntisenaho, Reetta Suo,
+          Ulla Perälä and daughter Margit. The singing is done by the trio
+          Anna-Liisa, Margit and Merja, with Martta &amp; Otto on accordions.
         </p>
 
-        <p><strong>A separate Christmas songbook “Joululauluja” is also available.</strong></p>
+        <p>
+          A separate <strong>Joululauluja songbook</strong> is also available.
+        </p>
 
         <p class="price-block">
-          Tape 10 €, CD 15 €<br>
-          Songbook 6 €<br>
-          Songbook + tape or CD together 15 €
+          Price: cassette 10 €, CD 15 €<br>
+          Joululauluja songbook 6 €<br>
+          Songbook + cassette or CD together 15 €
         </p>
 
-        <a class="order-link" href="tilaus_eng.htm">Order record or songbook</a>
+        <a class="order-link" href="tilaus_eng.htm">Order this record or songbook</a>
 
         <p class="small-print">
           Orders are handled via the English order form.
@@ -141,5 +182,12 @@
       </section>
     </main>
   </div>
+
+  <footer class="site-footer">
+    <p>
+      © Family ensemble Rantamäki · Orders &amp; contact:
+      <a href="mailto:me@ollaansuomalaisii.fi">me@ollaansuomalaisii.fi</a>
+    </p>
+  </footer>
 </body>
 </html>
