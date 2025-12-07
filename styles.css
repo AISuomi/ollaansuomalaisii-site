@@ -482,4 +482,37 @@ a:hover {
   .in-memoriam .ornament {
     font-size: 1.2rem;
   }
+  
+.memoriam-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  text-align: center;
+  margin: 0 auto 20px;
+  max-width: 380px;
+}
+
+.memoriam-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.note-symbol {
+  font-size: 2.4rem;        
+  line-height: 1;
+}
+
+.memoriam-title {
+  font-family: "UnifrakturCook", serif;
+  font-size: 1.8rem;
+  margin-top: 4px;
+}
+
+.memoriam-names {
+  margin-top: 6px;
+  font-size: 1.1rem;
+  font-family: "Georgia", "Times New Roman", serif;
 }
