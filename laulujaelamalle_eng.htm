@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Lauluja Elämälle – Family ensemble Rantamäki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Lauluja Elämälle – tape with songs by Martta Rantamäki.">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body.lauluja-page {
+      background: #0c84b8;
+      color: #102030;
+    }
+    .album-wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem 1rem 3rem;
+    }
+    .album-card {
+      max-width: 900px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      display: grid;
+      grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+    .album-cover { text-align: center; }
+    .album-cover img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      display: block;
+      margin: 0 auto;
+    }
+    .album-text p {
+      margin: 0 0 0.75rem 0;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+    .price-block {
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+    .order-link {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      background: #0c6fbf;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .order-link:hover,
+    .order-link:focus {
+      background: #084f8c;
+      text-decoration: none;
+    }
+    .small-print {
+      font-size: 0.75rem;
+      color: #666;
+      margin-top: 1rem;
+    }
+    @media (max-width: 720px) {
+      .album-card { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body class="lauluja-page">
+  <div class="album-wrapper">
+    <main class="album-card">
+      <div class="album-cover">
+        <a href="tilaus_eng.htm">
+          <img src="Kuvat/lauluja.gif" alt="Lauluja Elämälle – cover">
+        </a>
+      </div>
+
+      <section class="album-text">
+        <p>
+          <strong>"Lauluja Elämälle"</strong> (Songs for Life) is currently available
+          as tape only. The tape includes melodies and lyrics by Martta Rantamäki.
+          Some lyrics are written by Eila Pöntisenaho, Reetta Suo, Ulla Perälä and
+          daughter Margit.
+        </p>
+
+        <p>
+          The vocal solos are sung by Anna-Liisa, Margit and Merja, with Martta &amp; Otto
+          on accordion.
+        </p>
+
+        <p class="price-block">
+          Price: 10 € (tape)
+        </p>
+
+        <a class="order-link" href="tilaus_eng.htm">Order this tape</a>
+
+        <p class="small-print">
+          Orders are handled via the English order form.
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
