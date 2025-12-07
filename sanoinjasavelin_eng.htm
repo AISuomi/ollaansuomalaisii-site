@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Sanoin ja sävelin – Family ensemble Rantamäki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sanoin ja sävelin I–III – songbooks and recordings by Martta Rantamäki.">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body.sanoin-page {
+      background: #0c84b8;
+      color: #102030;
+    }
+    .album-wrapper {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem 1rem 3rem;
+    }
+    .album-card {
+      max-width: 900px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      display: grid;
+      grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+    .album-cover { text-align: center; }
+    .album-cover img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      display: block;
+      margin: 0 auto;
+    }
+    .album-text p {
+      margin: 0 0 0.75rem 0;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+    .price-block {
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+    .order-link {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      background: #0c6fbf;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .order-link:hover,
+    .order-link:focus {
+      background: #084f8c;
+      text-decoration: none;
+    }
+    .small-print {
+      font-size: 0.75rem;
+      color: #666;
+      margin-top: 1rem;
+    }
+    @media (max-width: 720px) {
+      .album-card { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body class="sanoin-page">
+  <div class="album-wrapper">
+    <main class="album-card">
+
+      <div class="album-cover">
+        <!-- Vaihda tähän Sanoin ja sävelin -kansikuva jos sellainen on -->
+        <a href="tilaus_eng.htm">
+          <img src="Kuvat/sanoinjasavelin.jpg" alt="Sanoin ja sävelin – cover">
+        </a>
+      </div>
+
+      <section class="album-text">
+        <p>
+          <strong>“Sanoin ja sävelin”</strong> (Words and melodies) I–III are
+          songbooks and recordings with more than one hundred songs by
+          Martta Rantamäki.
+        </p>
+
+        <p>
+          The songs speak about everyday life, Finnish nature and people.
+          Many choirs and small bands have used the material in their own concerts.
+        </p>
+
+        <p>
+          The songbooks are available as:
+        </p>
+        <ul>
+          <li>Sanoin ja sävelin I</li>
+          <li>Sanoin ja sävelin II</li>
+          <li>Sanoin ja sävelin III</li>
+        </ul>
+
+        <p class="price-block">
+          Songbooks and recordings can be ordered via the order form.
+        </p>
+
+        <a class="order-link" href="tilaus_eng.htm">Order songbooks / recordings</a>
+
+        <p class="small-print">
+          If you are interested in specific songs or need more details,
+          please write your wishes in the message field of the order form.
+        </p>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
