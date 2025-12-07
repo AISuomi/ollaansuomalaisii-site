@@ -2,305 +2,350 @@
 <html lang="fi">
 <head>
   <meta charset="UTF-8">
-  <title>Tilaus – Rantamäen perheyhtye</title>
+  <title>Tilaa äänitteitä ja nuotteja – Rantamäen perheyhtye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Tilaa Rantamäen perheyhtyeen äänitteitä ja nuotteja – Ollaan suomalaisii, Sanoin ja sävelin, Joululauluja, Lauluja elämälle, Rakasta kärsi ja unhoita, Muistojen taikaa.">
+  <meta name="description" content="Tilaa Rantamäen perheyhtyeen äänitteitä ja nuottikirjoja. Ollaan suomalaisii, Sanoin ja sävelin, Joululauluja, Lauluja Elämälle, Rakasta kärsi ja unhoita, Muistojen Taikaa.">
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <!-- HEADER + NAV -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="otto-box">
+        <img src="Kuvat/otto.jpg" alt="Otto Rantamäki" class="otto-photo">
+        <div class="otto-text">
+          <p class="rip-line">In memoriam Martta ja Otto Rantamäki</p>
+          <p class="dates">27.06.1926 – 19.04.2011</p>
+        </div>
+      </div>
+
+      <div class="title-box">
+        <div class="flags-row">
+          <span class="flag">🇫🇮</span>
+          <span class="site-title">Rantamäen perheyhtye</span>
+          <span class="flag">🇫🇮</span>
+        </div>
+        <p class="subtitle">
+          Haitarimusiikkia ja lauluja elämästä – omia sävelmiä ja sanoituksia
+        </p>
+      </div>
+
+      <div class="cover-box">
+        <img src="Kuvat/vedos.jpg" alt="Rantamäen perheyhtye" class="cover-photo">
+        <p class="cover-caption">Rantamäen perheyhtye</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="etusivu.html">Etusivu</a></li>
+        <li><a href="ollaansuomalaisii.htm">Ollaan Suomalaisii</a></li>
+        <li><a href="sanoinjasavelin.htm">Sanoin ja sävelin</a></li>
+        <li><a href="joululauluja.htm">Joululauluja</a></li>
+        <li><a href="laulujaelamalle.htm">Lauluja elämälle</a></li>
+        <li><a href="rakasta.htm">Rakasta, kärsi ja unhoita</a></li>
+        <li><a href="muistojentaikaa.htm">Muistojen Taikaa</a></li>
+        <li><a href="tilaus.htm" class="active">Tilaa äänitteitä &amp; nuotteja</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <main class="order-page">
-
-    <!-- Levyjen galleria -->
-    <section class="order-gallery">
-      <h2>Äänitteet ja nuotit</h2>
-      <div class="album-grid">
-        <figure class="album-card">
-          <img src="Kuvat/vedos.jpg" alt="Ollaan suomalaisii">
-          <figcaption>Ollaan suomalaisii</figcaption>
-        </figure>
-
-        <figure class="album-card">
-          <img src="Kuvat/MuistojenTaikaa.jpg" alt="Muistojen taikaa">
-          <figcaption>Muistojen taikaa</figcaption>
-        </figure>
-
-        <!-- Voit lisätä tähän lisää levyjen kansia samalla tyylillä -->
-      </div>
-    </section>
-
     <section class="order-intro">
-      <h1>Tilauslomake</h1>
+      <h1>Tilaa äänitteitä ja nuotteja</h1>
       <p>
-        Voit tilata Rantamäen perheyhtyeen äänitteitä ja nuotteja alla olevalla lomakkeella.
-        Kun painat <strong>Lähetä tilaus</strong>, tilaus lähetetään palvelimen kautta
-        käsiteltäväksi, eikä erillistä sähköpostiohjelmaa tarvita.
+        Tällä lomakkeella voit tilata Rantamäen perheyhtyeen äänitteitä ja nuottikirjoja.
+        Lomake lähetetään Formspree-palvelun kautta sähköpostiimme.
       </p>
       <p>
-        Laskemme tilauksesi ja lähetämme maksuohjeen sekä tilausvahvistuksen
-        antamaasi sähköpostiosoitteeseen. Hintoihin lisätään postikulut
-        lähetyksen painon mukaan.
+        Täytä yhteystietosi, valitse tuotteet ja lähetä tilaus. Vastaamme sinulle
+        sähköpostilla tilausvahvistuksen ja maksuohjeet.
       </p>
     </section>
 
-    <!-- Formspree-lomake -->
-    <form class="order-form"
-          action="https://formspree.io/f/mdkqdpbg"
-          method="POST">
+    <section class="order-form">
+      <form action="https://formspree.io/f/mdkqdpbg" method="POST">
+        <input type="hidden" name="language" value="Finnish">
 
-      <!-- Asetetaan sähköpostin otsikko -->
-      <input type="hidden" name="_subject" value="Rantamäen perheyhtyeen tilaus">
+        <fieldset class="order-fieldset">
+          <legend>Yhteystiedot</legend>
 
-      <fieldset class="order-fieldset">
-        <legend>Yhteystiedot</legend>
-
-        <div class="field-row">
-          <label for="nimi">Nimi</label>
-          <input type="text" id="nimi" name="Nimi" required>
-        </div>
-
-        <div class="field-row">
-          <label for="osoite">Osoite</label>
-          <input type="text" id="osoite" name="Osoite" required>
-        </div>
-
-        <div class="field-row">
-          <label for="posti">Postinumero ja -toimipaikka</label>
-          <input type="text" id="posti" name="Postinumero ja -toimipaikka" required>
-        </div>
-
-        <div class="field-row">
-          <label for="email">Sähköposti</label>
-          <!-- Formspree tunnistaa nimen "email" vastaukseksi -->
-          <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="field-row">
-          <label for="puhelin">Puhelin</label>
-          <input type="text" id="puhelin" name="Puhelin">
-        </div>
-      </fieldset>
-
-      <fieldset class="order-fieldset">
-        <legend>Tilattavat tuotteet</legend>
-
-        <!-- Yksi tuoterivi = yksi formaatti, jotta hinnat selkeitä summaa varten -->
-
-        <div class="product-row">
-          <div class="product-info">
-            <div class="product-title">Ollaan suomalaisii – CD</div>
-            <div class="product-note">20 € / kpl</div>
+          <div class="field-row">
+            <label for="name">Nimi</label>
+            <input type="text" id="name" name="Nimi" required>
           </div>
-          <div class="product-controls">
-            <label>
-              Määrä
-              <select class="product-qty" name="Ollaan suomalaisii – CD kpl" data-price="20">
+
+          <div class="field-row">
+            <label for="address">Osoite</label>
+            <input type="text" id="address" name="Osoite" required>
+          </div>
+
+          <div class="field-row">
+            <label for="zip">Postinumero ja -toimipaikka</label>
+            <input type="text" id="zip" name="Postinumero ja -toimipaikka" required>
+          </div>
+
+          <div class="field-row">
+            <label for="phone">Puhelin</label>
+            <input type="text" id="phone" name="Puhelin">
+          </div>
+
+          <div class="field-row">
+            <label for="email">Sähköposti</label>
+            <input type="email" id="email" name="Sähköposti" required>
+          </div>
+        </fieldset>
+
+        <fieldset class="order-fieldset">
+          <legend>Äänitteet</legend>
+
+          <!-- Ollaan suomalaisii -->
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Ollaan suomalaisii (CD)</div>
+              <div class="product-note">20 kappaletta suomalaisesta elämästä kertovia lauluja.</div>
+            </div>
+            <div class="product-controls">
+              <label for="ollaansuomalaisii_cd">Määrä</label>
+              <select id="ollaansuomalaisii_cd" name="Ollaan suomalaisii CD kpl"
+                      class="product-qty" data-price="20">
                 <option value="0">0</option>
-                <option>1</option><option>2</option><option>3</option>
-                <option>4</option><option>5</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
               </select>
-            </label>
+            </div>
           </div>
-        </div>
 
-        <div class="product-row">
-          <div class="product-info">
-            <div class="product-title">Sanoin ja sävelin – CD</div>
-            <div class="product-note">15 € / kpl</div>
-          </div>
-          <div class="product-controls">
-            <label>
-              Määrä
-              <select class="product-qty" name="Sanoin ja sävelin – CD kpl" data-price="15">
+          <!-- Sanoin ja sävelin -->
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Sanoin ja sävelin (CD)</div>
+              <div class="product-note">14 Martan sävelmää, sanat ja sovitukset.</div>
+            </div>
+            <div class="product-controls">
+              <label for="sanoin_cd">Määrä</label>
+              <select id="sanoin_cd" name="Sanoin ja sävelin CD kpl"
+                      class="product-qty" data-price="15">
                 <option value="0">0</option>
-                <option>1</option><option>2</option><option>3</option>
-                <option>4</option><option>5</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
               </select>
-            </label>
+            </div>
           </div>
-        </div>
 
-        <div class="product-row">
-          <div class="product-info">
-            <div class="product-title">Sanoin ja sävelin – kasetti</div>
-            <div class="product-note">10 € / kpl</div>
-          </div>
-          <div class="product-controls">
-            <label>
-              Määrä
-              <select class="product-qty" name="Sanoin ja sävelin – kasetti kpl" data-price="10">
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Sanoin ja sävelin (kasetti)</div>
+            </div>
+            <div class="product-controls">
+              <label for="sanoin_cassette">Määrä</label>
+              <select id="sanoin_cassette" name="Sanoin ja sävelin kasetti kpl"
+                      class="product-qty" data-price="10">
                 <option value="0">0</option>
-                <option>1</option><option>2</option><option>3</option>
-                <option>4</option><option>5</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
               </select>
-            </label>
+            </div>
           </div>
-        </div>
 
-        <div class="product-row">
-          <div class="product-info">
-            <div class="product-title">Sanoin ja sävelin I–III – nuottikirja</div>
-            <div class="product-note">20 € / kpl</div>
-          </div>
-          <div class="product-controls">
-            <label>
-              Määrä
-              <select class="product-qty" name="Sanoin ja sävelin I–III – nuottikirja kpl" data-price="20">
+          <!-- Joululauluja -->
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Joululauluja (CD)</div>
+            </div>
+            <div class="product-controls">
+              <label for="joululauluja_cd">Määrä</label>
+              <select id="joululauluja_cd" name="Joululauluja CD kpl"
+                      class="product-qty" data-price="15">
                 <option value="0">0</option>
-                <option>1</option><option>2</option><option>3</option>
-                <option>4</option><option>5</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
               </select>
-            </label>
+            </div>
           </div>
-        </div>
 
-        <div class="product-row">
-          <div class="product-info">
-            <div class="product-title">Joululauluja – CD</div>
-            <div class="product-note">15 € / kpl</div>
-          </div>
-          <div class="product-controls">
-            <label>
-              Määrä
-              <select class="product-qty" name="Joululauluja – CD kpl" data-price="15">
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Joululauluja (kasetti)</div>
+            </div>
+            <div class="product-controls">
+              <label for="joululauluja_cassette">Määrä</label>
+              <select id="joululauluja_cassette" name="Joululauluja kasetti kpl"
+                      class="product-qty" data-price="10">
                 <option value="0">0</option>
-                <option>1</option><option>2</option><option>3</option>
-                <option>4</option><option>5</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
               </select>
-            </label>
+            </div>
           </div>
-        </div>
 
-        <div class="product-row">
-          <div class="product-info">
-            <div class="product-title">Joululauluja – kasetti</div>
-            <div class="product-note">10 € / kpl</div>
-          </div>
-          <div class="product-controls">
-            <label>
-              Määrä
-              <select class="product-qty" name="Joululauluja – kasetti kpl" data-price="10">
+          <!-- Lauluja Elämälle -->
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Lauluja Elämälle (kasetti)</div>
+            </div>
+            <div class="product-controls">
+              <label for="lauluja_cassette">Määrä</label>
+              <select id="lauluja_cassette" name="Lauluja Elämälle kasetti kpl"
+                      class="product-qty" data-price="10">
                 <option value="0">0</option>
-                <option>1</option><option>2</option><option>3</option>
-                <option>4</option><option>5</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
               </select>
-            </label>
+            </div>
           </div>
-        </div>
 
-        <div class="product-row">
-          <div class="product-info">
-            <div class="product-title">Joululauluja – nuottivihko</div>
-            <div class="product-note">6 € / kpl</div>
-          </div>
-          <div class="product-controls">
-            <label>
-              Määrä
-              <select class="product-qty" name="Joululauluja – nuottivihko kpl" data-price="6">
+          <!-- Rakasta, kärsi ja unhoita -->
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Rakasta, kärsi ja unhoita (kasetti)</div>
+              <div class="product-note">Tarjoushinta.</div>
+            </div>
+            <div class="product-controls">
+              <label for="rakasta_cassette">Määrä</label>
+              <select id="rakasta_cassette" name="Rakasta, kärsi ja unhoita kasetti kpl"
+                      class="product-qty" data-price="6">
                 <option value="0">0</option>
-                <option>1</option><option>2</option><option>3</option>
-                <option>4</option><option>5</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
               </select>
-            </label>
+            </div>
           </div>
-        </div>
 
-        <div class="product-row">
-          <div class="product-info">
-            <div class="product-title">Lauluja elämälle – kasetti</div>
-            <div class="product-note">10 € / kpl</div>
-          </div>
-          <div class="product-controls">
-            <label>
-              Määrä
-              <select class="product-qty" name="Lauluja elämälle – kasetti kpl" data-price="10">
+          <!-- Muistojen Taikaa -->
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Muistojen Taikaa (CD)</div>
+            </div>
+            <div class="product-controls">
+              <label for="muistojen_cd">Määrä</label>
+              <select id="muistojen_cd" name="Muistojen Taikaa CD kpl"
+                      class="product-qty" data-price="20">
                 <option value="0">0</option>
-                <option>1</option><option>2</option><option>3</option>
-                <option>4</option><option>5</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
               </select>
-            </label>
+            </div>
           </div>
-        </div>
+        </fieldset>
 
-        <div class="product-row">
-          <div class="product-info">
-            <div class="product-title">Rakasta, kärsi ja unhoita – kasetti</div>
-            <div class="product-note">6 € / kpl</div>
-          </div>
-          <div class="product-controls">
-            <label>
-              Määrä
-              <select class="product-qty" name="Rakasta, kärsi ja unhoita – kasetti kpl" data-price="6">
+        <fieldset class="order-fieldset">
+          <legend>Nuottikirjat</legend>
+
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Sanoin ja sävelin -nuottikirjat I–III</div>
+              <div class="product-note">Yhteensä 101 Martan tekemää laulua.</div>
+            </div>
+            <div class="product-controls">
+              <label for="sanoin_books">Määrä</label>
+              <select id="sanoin_books" name="Sanoin ja sävelin nuottikirjasarja kpl"
+                      class="product-qty" data-price="20">
                 <option value="0">0</option>
-                <option>1</option><option>2</option><option>3</option>
-                <option>4</option><option>5</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
               </select>
-            </label>
+            </div>
           </div>
-        </div>
 
-        <div class="product-row">
-          <div class="product-info">
-            <div class="product-title">Muistojen taikaa – CD</div>
-            <div class="product-note">20 € / kpl</div>
-          </div>
-          <div class="product-controls">
-            <label>
-              Määrä
-              <select class="product-qty" name="Muistojen taikaa – CD kpl" data-price="20">
+          <div class="product-row">
+            <div class="product-info">
+              <div class="product-title">Joululauluja – nuottivihko</div>
+            </div>
+            <div class="product-controls">
+              <label for="joululauluja_book">Määrä</label>
+              <select id="joululauluja_book" name="Joululauluja nuottivihko kpl"
+                      class="product-qty" data-price="6">
                 <option value="0">0</option>
-                <option>1</option><option>2</option><option>3</option>
-                <option>4</option><option>5</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
               </select>
-            </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="order-total-box">
+          Arvioitu summa: <span id="order-total">0 €</span>
+          <div class="order-total-note">
+            Lopullinen summa varmistuu tilausvahvistuksessa (sisältäen postikulut).
           </div>
         </div>
 
-      </fieldset>
+        <fieldset class="order-fieldset">
+          <legend>Lisätiedot</legend>
+          <textarea name="Viesti" rows="4" placeholder="Esimerkiksi toivottu toimitustapa, lisäkysymykset tai muu viesti."></textarea>
+        </fieldset>
 
-      <fieldset class="order-fieldset">
-        <legend>Kommentit ja lisätiedot</legend>
-        <textarea name="Lisätiedot" rows="4" placeholder="Esimerkiksi toivomasi toimitustapa tai muu viesti meille."></textarea>
-      </fieldset>
-
-      <div class="order-total-box">
-        <strong>Tilauksen arvioitu summa:</strong>
-        <span id="order-total">0 €</span>
-        <div class="order-total-note">
-          (Summassa ei ole mukana postikuluja. Lopullinen lasku vahvistetaan erikseen.)
+        <div class="order-actions">
+          <button type="submit">Lähetä tilaus</button>
+          <button type="reset" class="secondary">Tyhjennä lomake</button>
         </div>
-      </div>
 
-      <div class="order-actions">
-        <button type="submit">Lähetä tilaus</button>
-        <button type="reset" class="secondary">Tyhjennä lomake</button>
-      </div>
-
-      <p class="order-note">
-        Huom! Lähetyksen jälkeen näytetään palvelun kuittaus, ja me käsittelemme tilauksen
-        ja vastaamme sinulle sähköpostitse.
-      </p>
-    </form>
+        <p class="order-note">
+          Saat automaattisesti vahvistusviestin sähköpostiisi, kun tilaus on vastaanotettu.
+        </p>
+      </form>
+    </section>
   </main>
 
+  <footer class="site-footer">
+    <p>
+      © Rantamäen perheyhtye – Ollaan suomalaisii · Yhteystiedot ja tilaukset:
+      <a href="mailto:me@ollaansuomalaisii.fi">me@ollaansuomalaisii.fi</a>
+    </p>
+  </footer>
+
   <script>
-    function paivitaSumma() {
+    function updateTotal() {
       var total = 0;
       var selects = document.querySelectorAll('.product-qty');
-      selects.forEach(function (sel) {
-        var kpl = parseInt(sel.value, 10) || 0;
-        var hinta = parseFloat(sel.getAttribute('data-price')) || 0;
-        total += kpl * hinta;
+      selects.forEach(function(sel) {
+        var qty = parseInt(sel.value, 10) || 0;
+        var price = parseFloat(sel.getAttribute('data-price')) || 0;
+        total += qty * price;
       });
-      document.getElementById('order-total').textContent =
-        total.toFixed(2).replace('.00', '') + ' €';
+      var el = document.getElementById('order-total');
+      if (el) {
+        var euros = total.toFixed(2).replace('.', ',');
+        el.textContent = euros + ' €';
+      }
     }
 
     document.addEventListener('DOMContentLoaded', function () {
-      document.querySelectorAll('.product-qty').forEach(function (sel) {
-        sel.addEventListener('change', paivitaSumma);
+      var selects = document.querySelectorAll('.product-qty');
+      selects.forEach(function(sel) {
+        sel.addEventListener('change', updateTotal);
       });
-      paivitaSumma();
+      updateTotal();
     });
   </script>
 </body>
