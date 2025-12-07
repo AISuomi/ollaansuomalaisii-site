@@ -5,7 +5,7 @@
 
   <title>Sanoin ja sävelin – Family ensemble Rantamäki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sanoin ja sävelin I–III – songbooks and recordings by Martta Rantamäki.">
+  <meta name="description" content="Sanoin ja sävelin has been released both on CD and cassette. Vocals by Anna-Liisa & Merja, accompanied by Martta & Otto on accordions. Songbooks Sanoin ja Sävelin I–III contain 101 songs by Martta.">
 
   <link rel="stylesheet" href="styles.css">
 
@@ -14,6 +14,7 @@
       background: #0c84b8;
       color: #102030;
     }
+
     .album-wrapper {
       min-height: 100vh;
       display: flex;
@@ -21,106 +22,180 @@
       align-items: flex-start;
       padding: 2rem 1rem 3rem;
     }
+
     .album-card {
-      max-width: 900px;
+      max-width: 980px;
       width: 100%;
       background: #ffffff;
       border-radius: 8px;
       padding: 1.5rem;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
       display: grid;
-      grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
+      grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
       gap: 1.5rem;
+      margin-top: 1rem;
     }
-    .album-cover { text-align: center; }
+
     .album-cover img {
       max-width: 100%;
       height: auto;
       border-radius: 4px;
-      display: block;
-      margin: 0 auto;
     }
+
     .album-text p {
       margin: 0 0 0.75rem 0;
+      font-size: 0.95rem;
       line-height: 1.5;
+    }
+
+    .track-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0 1.25rem 0;
       font-size: 0.95rem;
     }
+
+    .track-list li + li {
+      margin-top: 0.2rem;
+    }
+
     .price-block {
       font-weight: bold;
-      margin-top: 0.5rem;
+      margin-top: 0.6rem;
     }
+
     .order-link {
       margin-top: 1rem;
       display: inline-block;
-      padding: 0.4rem 0.9rem;
+      padding: 0.45rem 0.9rem;
       border-radius: 999px;
       background: #0c6fbf;
       color: #ffffff;
-      text-decoration: none;
       font-weight: 600;
+      text-decoration: none;
       font-size: 0.95rem;
     }
-    .order-link:hover,
-    .order-link:focus {
+
+    .order-link:hover {
       background: #084f8c;
-      text-decoration: none;
     }
+
     .small-print {
       font-size: 0.75rem;
       color: #666;
-      margin-top: 1rem;
+      margin-top: 0.8rem;
     }
+
     @media (max-width: 720px) {
-      .album-card { grid-template-columns: 1fr; }
+      .album-card {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 
 <body class="sanoin-page">
+  <header class="site-header">
+    <div class="header-top">
+      <div class="otto-box">
+        <img src="Kuvat/otto.jpg" alt="Otto Rantamäki" class="otto-photo">
+        <div class="otto-text">
+          <p class="rip-line">R.I.P. Otto Rantamäki</p>
+          <p class="dates">27.06.1926 – 19.04.2011</p>
+        </div>
+      </div>
+
+      <div class="title-box">
+        <div class="flags-row">
+          <span class="flag">🇫🇮</span>
+          <span class="site-title">Family ensemble Rantamäki</span>
+          <span class="flag">🇫🇮</span>
+        </div>
+        <p class="subtitle">
+          Accordion music and songs about Finnish life – original melodies and lyrics
+        </p>
+      </div>
+
+      <div class="cover-box">
+        <img src="Kuvat/vedos.jpg" alt="Family ensemble Rantamäki" class="cover-photo">
+        <p class="cover-caption">Family ensemble Rantamäki</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="english.htm">Home</a></li>
+        <li><a href="ollaansuomalaisii_eng.htm">Ollaan suomalaisii</a></li>
+        <li><a href="sanoinjasavelin_eng.htm" class="active">Sanoin ja sävelin</a></li>
+        <li><a href="joululauluja_eng.htm">Joululauluja</a></li>
+        <li><a href="laulujaelamalle_eng.htm">Lauluja elämälle</a></li>
+        <li><a href="rakasta_eng.htm">Rakasta, kärsi ja unhoita</a></li>
+        <li><a href="muistojentaikaa_eng.htm">Muistojen Taikaa</a></li>
+        <li><a href="tilaus_eng.htm">Orders &amp; sheet music</a></li>
+        <li><a href="palaute_eng.htm">Feedback &amp; contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <div class="album-wrapper">
     <main class="album-card">
-
       <div class="album-cover">
-        <!-- Vaihda tähän Sanoin ja sävelin -kansikuva jos sellainen on -->
         <a href="tilaus_eng.htm">
-          <img src="Kuvat/sanoinjasavelin.jpg" alt="Sanoin ja sävelin – cover">
+          <img src="Kuvat/sanoinja.gif" alt="Sanoin ja sävelin – cover">
         </a>
       </div>
 
       <section class="album-text">
         <p>
-          <strong>“Sanoin ja sävelin”</strong> (Words and melodies) I–III are
-          songbooks and recordings with more than one hundred songs by
-          Martta Rantamäki.
+          <strong>Sanoin ja sävelin</strong> has been released both on CD and cassette.
+          The singers are Anna-Liisa &amp; Merja as a duo, accompanied by Martta &amp; Otto
+          as an accordion duo.
         </p>
 
         <p>
-          The songs speak about everyday life, Finnish nature and people.
-          Many choirs and small bands have used the material in their own concerts.
+          In addition, Martta Rantamäki has compiled three songbooks,
+          <strong>Sanoin ja Sävelin I, II and III</strong>, which together contain
+          101 songs of her own.
         </p>
 
-        <p>
-          The songbooks are available as:
-        </p>
-        <ul>
-          <li>Sanoin ja sävelin I</li>
-          <li>Sanoin ja sävelin II</li>
-          <li>Sanoin ja sävelin III</li>
+        <ul class="track-list">
+          <li><a href="Introt/Sanoin%20ja%20Savelin/Serenadikaustisille.mp3" target="_blank">Serenadi Kaustisille</a></li>
+          <li><a href="Introt/Sanoin%20ja%20Savelin/Illan%20hamatyessa.mp3" target="_blank">Illan hämärtyessä</a></li>
+          <li><a href="Introt/Sanoin%20ja%20Savelin/Se%20niinko%20olla%20vois.mp3" target="_blank">Se niinkö olla vois</a></li>
+          <li><a href="Introt/Sanoin%20ja%20Savelin/Onnen%20askeleet.mp3" target="_blank">Onnen askeleet</a></li>
+          <li><a href="Introt/Sanoin%20ja%20Savelin/Kevaan%20ihmeenko%20naan.mp3" target="_blank">Kevään ihmeenkö nään</a></li>
+          <li><a href="Introt/Sanoin%20ja%20Savelin/Nyt%20kaikki%20muuttuu.mp3" target="_blank">Nyt kaikki muuttuu</a></li>
+          <li><a href="Introt/Sanoin%20ja%20Savelin/Aitienpaivana.mp3" target="_blank">Äitienpäivänä</a></li>
+          <li><a href="Introt/Sanoin%20ja%20Savelin/Haaveillen%20huomiseen.mp3" target="_blank">Haaveillen huomiseen</a></li>
+          <li><a href="Introt/Sanoin%20ja%20Savelin/Elaman%20kulku.mp3" target="_blank">Elämän kulku</a></li>
+          <li><a href="Introt/Sanoin%20ja%20Savelin/Sai%20soitellen%20syksy.mp3" target="_blank">Sai soitellen syksy</a></li>
+          <li><a href="Introt/Sanoin%20ja%20Savelin/Pienen%20maalaistalon%20emanta.mp3" target="_blank">Pienen maalaistalon emäntä</a></li>
+          <li><a href="Introt/Sanoin%20ja%20Savelin/Tunteiden%20tulkki.mp3" target="_blank">Tunteiden tulkki</a></li>
+          <li><a href="Introt/Sanoin%20ja%20Savelin/Ela%20sydamella.mp3" target="_blank">Elä sydämellä</a></li>
+          <li><a href="Introt/Sanoin%20ja%20Savelin/Isanpaivana%20isalle.mp3" target="_blank">Isänpäivänä isälle</a></li>
         </ul>
 
         <p class="price-block">
-          Songbooks and recordings can be ordered via the order form.
+          Price: 15 € / CD, 10 € / cassette<br>
+          Songbooks Sanoin ja Sävelin I–III: 20 €<br>
+          Songbooks + cassette: 25 €<br>
+          Songbooks + CD: 30 €
         </p>
 
-        <a class="order-link" href="tilaus_eng.htm">Order songbooks / recordings</a>
+        <a class="order-link" href="tilaus_eng.htm">Order this record or songbooks</a>
 
         <p class="small-print">
-          If you are interested in specific songs or need more details,
-          please write your wishes in the message field of the order form.
+          Orders are handled via the English order form.
         </p>
       </section>
-
     </main>
   </div>
+
+  <footer class="site-footer">
+    <p>
+      © Family ensemble Rantamäki · Orders &amp; contact:
+      <a href="mailto:me@ollaansuomalaisii.fi">me@ollaansuomalaisii.fi</a>
+    </p>
+  </footer>
 </body>
 </html>
