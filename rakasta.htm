@@ -4,19 +4,16 @@
   <meta charset="UTF-8">
 
   <title>Rakasta, kärsi ja unhoita – Rantamäen sisarukset</title>
-
-  <meta name="keywords" content="Martta Rantamäki, Rantamäen sisarukset, Merja, Margit, Anna-Liisa, haitari, kansanmusiikki, omakustanne, Rakasta kärsi ja unhoita">
-  <meta name="description" content="Rakasta, kärsi ja unhoita – Rantamäen sisarusten triolevy, jonka kappaleista puolet Martta-äidin käsialaa ja sovitukset Reino 'Rene' Karppiselta.">
+  <meta name="keywords" content="Rakasta kärsi ja unhoita, Rantamäen sisarukset, Martta Rantamäki, Merja, Margit, Anna-Liisa, haitari, kasetti">
+  <meta name="description" content="”Rakasta, kärsi ja unhoita” - Rantamäen sisarukset -trioäänite studio-orkesterin säestyksellä.">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Yhteiset tyylit -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Sivukohtaiset tyylit -->
   <style>
     body.rakasta-page {
-      background: #0c84b8; /* sama moderni sininen kuin muissa */
+      background: #0c84b8;
       color: #102030;
     }
 
@@ -34,24 +31,23 @@
       background: #ffffff;
       border-radius: 8px;
       padding: 1.5rem;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
       display: grid;
       grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
       gap: 1.5rem;
+      margin-top: 1rem;
     }
 
     .album-cover img {
       max-width: 100%;
       height: auto;
       border-radius: 4px;
-      display: block;
-      margin: 0 auto;
     }
 
     .album-text p {
       margin: 0 0 0.75rem 0;
-      line-height: 1.5;
       font-size: 0.95rem;
+      line-height: 1.5;
     }
 
     .price-block {
@@ -79,19 +75,52 @@
       color: #666;
       margin-top: 0.8rem;
     }
-
-    @media (max-width: 720px) {
-      .album-card {
-        grid-template-columns: 1fr;
-      }
-    }
   </style>
 </head>
 
 <body class="rakasta-page">
+
+  <header class="site-header">
+    <div class="header-top">
+      <div class="otto-box">
+        <img src="Kuvat/Otto.jpg" alt="Otto Rantamäki" class="otto-photo">
+        <div class="otto-text">
+          <p class="rip-line">R.I.P Otto Rantamäki</p>
+          <p class="dates">27.06.1926 – 19.04.2011</p>
+        </div>
+      </div>
+
+      <div class="title-box">
+        <div class="flags-row">
+          <span class="flag">🇫🇮</span>
+          <span class="site-title">Rantamäen perheyhtye</span>
+          <span class="flag">🇫🇮</span>
+        </div>
+        <p class="subtitle">Haitarimusiikkia ja lauluja elämästä – omia sävelmiä ja sanoituksia</p>
+      </div>
+
+      <div class="cover-box">
+        <img src="Kuvat/vedos.jpg" class="cover-photo" alt="">
+        <p class="cover-caption">Rantamäen perheyhtye</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="etusivu.html">Etusivu</a></li>
+        <li><a href="ollaansuomalaisii.htm">Ollaan Suomalaisii</a></li>
+        <li><a href="sanoinjasavelin.htm">Sanoin ja sävelin</a></li>
+        <li><a href="joululauluja.htm">Joululauluja</a></li>
+        <li><a href="laulujaelamalle.htm">Lauluja elämälle</a></li>
+        <li><a href="rakasta.htm" class="active">Rakasta, kärsi ja unhoita</a></li>
+        <li><a href="muistojentaikaa.htm">Muistojentaikaa</a></li>
+        <li><a href="tilaus.htm">Tilaa</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <div class="album-wrapper">
     <main class="album-card">
-
       <div class="album-cover">
         <a href="tilaus.htm">
           <img src="Kuvat/rakasta.gif" alt="Rakasta, kärsi ja unhoita – kansi">
@@ -100,17 +129,17 @@
 
       <section class="album-text">
         <p>
-          <strong>”Rakasta, kärsi ja unhoita” – Rantamäen sisarukset.</strong>
+          ”Rakasta, kärsi ja unhoita” - Rantamäen sisarukset.
         </p>
 
         <p>
-          Julkaisimme trioäänitteen, jossa säestäjänä toimii studio-orkesteri.  
+          Julkaisimme trio-äänitteen, jossa säestäjänä toimii studio-orkesteri.
           Äänitteen 14 kappaleesta puolet on Martta-äidin käsialaa.
         </p>
 
         <p>
-          Sovitusten tekijänä nuori mies <strong>Reino ”Rene” Karppinen (Kajaani)</strong>,  
-          jonka kappale <em>”Vanha mies”</em> löytyy myös kasetilta.
+          Sovitusten tekijänä on nuori mies Reino ”Rene” Karppinen (Kajaani),
+          jonka kappale ”Vanha mies” löytyy myös kasetilta.
         </p>
 
         <p class="price-block">
@@ -119,13 +148,17 @@
 
         <a class="order-link" href="tilaus.htm">Tilaa tästä</a>
 
-        <p class="small-print">
-          (Tilaukset avautuvat uuteen tilauslomakkeeseen.)
-        </p>
-
+        <p class="small-print">(Tilaukset avautuvat uuteen tilauslomakkeeseen.)</p>
       </section>
-
     </main>
   </div>
+
+  <footer class="site-footer">
+    <p>
+      © Rantamäen perheyhtye – Ollaan suomalaisii · Yhteystiedot ja tilaukset:
+      <a href="mailto:me@ollaansuomalaisii.fi">me@ollaansuomalaisii.fi</a>
+    </p>
+  </footer>
+
 </body>
 </html>
