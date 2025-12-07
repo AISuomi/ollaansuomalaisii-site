@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 
   <title>Lauluja Elämälle – Martta Rantamäki</title>
-  <meta name="keywords" content="Martta Rantamäki, Otto Rantamäki, Anna-Liisa, Merja, Margit, haitari, kansanmusiikki, omakustanne, sanoin ja sävelin, Lauluja elämälle">
+  <meta name="keywords" content="Martta Rantamäki, Otto Rantamäki, Anna-Liisa, Merja, Margit, haitari, kansanmusiikki, omakustanne, Lauluja elämälle">
   <meta name="description" content="Lauluja Elämälle -äänite Martta Rantamäen sävellyksiä ja sanoituksia. Kasetti, jonka lauluosuudet esittävät Anna-Liisa, Margit ja Merja.">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,6 @@
   <!-- Vain tämän sivun lisätyylit -->
   <style>
     body.lauluja-page {
-      /* vähän tummempi mutta rauhallinen sininen */
       background: #0c84b8;
       color: #102030;
     }
@@ -34,27 +33,21 @@
       background: #ffffff;
       border-radius: 8px;
       padding: 1.5rem;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
       display: grid;
       grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
       gap: 1.5rem;
-    }
-
-    .album-cover {
-      text-align: center;
+      margin-top: 1rem;
     }
 
     .album-cover img {
       max-width: 100%;
       height: auto;
       border-radius: 4px;
-      display: block;
-      margin: 0 auto;
     }
 
     .album-text p {
       margin: 0 0 0.75rem 0;
-      line-height: 1.5;
       font-size: 0.95rem;
     }
 
@@ -75,10 +68,8 @@
       font-size: 0.95rem;
     }
 
-    .order-link:hover,
-    .order-link:focus {
+    .order-link:hover {
       background: #084f8c;
-      text-decoration: none;
     }
 
     .small-print {
@@ -86,16 +77,52 @@
       color: #666;
       margin-top: 1rem;
     }
-
-    @media (max-width: 720px) {
-      .album-card {
-        grid-template-columns: 1fr;
-      }
-    }
   </style>
 </head>
 
 <body class="lauluja-page">
+
+  <!-- HEADER + NAVIGaatio (sama kuin etusivulla) -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="otto-box">
+        <img src="Kuvat/Otto.jpg" alt="Otto Rantamäki" class="otto-photo">
+        <div class="otto-text">
+          <p class="rip-line">R.I.P Otto Rantamäki</p>
+          <p class="dates">27.06.1926 – 19.04.2011</p>
+        </div>
+      </div>
+
+      <div class="title-box">
+        <div class="flags-row">
+          <span class="flag">🇫🇮</span>
+          <span class="site-title">Rantamäen perheyhtye</span>
+          <span class="flag">🇫🇮</span>
+        </div>
+        <p class="subtitle">Haitarimusiikkia ja lauluja elämästä – omia sävelmiä ja sanoituksia</p>
+      </div>
+
+      <div class="cover-box">
+        <img src="Kuvat/vedos.jpg" class="cover-photo" alt="">
+        <p class="cover-caption">Rantamäen perheyhtye</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="etusivu.html">Etusivu</a></li>
+        <li><a href="ollaansuomalaisii.htm">Ollaan Suomalaisii</a></li>
+        <li><a href="sanoinjasavelin.htm">Sanoin ja sävelin</a></li>
+        <li><a href="joululauluja.htm">Joululauluja</a></li>
+        <li><a href="laulujaelamalle.htm" class="active">Lauluja elämälle</a></li>
+        <li><a href="rakasta.htm">Rakasta, kärsi ja unhoita</a></li>
+        <li><a href="muistojentaikaa.htm">Muistojen Taikaa</a></li>
+        <li><a href="tilaus.htm">Tilaa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- VARSINAINEN SIVU -->
   <div class="album-wrapper">
     <main class="album-card">
       <div class="album-cover">
@@ -112,21 +139,24 @@
           Ulla Perälältä ja Margit-tyttäreltä.
         </p>
 
-        <p>
-          Lauluosuudet hoitavat yksinlauluna Anna-Liisa, Margit ja Merja.
-        </p>
+        <p>Lauluosuudet hoitavat yksinlauluna Anna-Liisa, Margit ja Merja.</p>
 
-        <p class="price-block">
-          h. 10e
-        </p>
+        <p class="price-block">h. 10e</p>
 
         <a class="order-link" href="tilaus.htm">Tilaa tästä</a>
 
-        <p class="small-print">
-          (Tilaukset avautuvat uuteen tilauslomakkeeseen.)
-        </p>
+        <p class="small-print">(Tilaukset avautuvat uuteen tilauslomakkeeseen.)</p>
       </section>
     </main>
   </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>
+      © Rantamäen perheyhtye – Ollaan suomalaisii · Yhteystiedot ja tilaukset:
+      <a href="mailto:me@ollaansuomalaisii.fi">me@ollaansuomalaisii.fi</a>
+    </p>
+  </footer>
+
 </body>
 </html>
