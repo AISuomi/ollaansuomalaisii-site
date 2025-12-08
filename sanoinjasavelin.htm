@@ -3,111 +3,29 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>Sanoin ja sävelin – Anna-Liisa & Merja, Martta & Otto</title>
-  <meta name="keywords" content="Sanoin ja sävelin, Martta Rantamäki, Otto Rantamäki, Anna-Liisa, Merja, haitari, kansanmusiikki, nuottikirjat">
-  <meta name="description" content="Sanoin ja sävelin on julkaistu sekä cd että kasettina, laulajina ovat Anna-Liisa & Merja duona, säestyksestä vastaa Martta & Otto hanuriduo. Lisäksi Sanoin ja Sävelin I–III -nuottikirjoista löytyy yhteensä 101 Martan omaa laulua.">
-
+  <title>Sanoin ja sävelin – Rantamäen perheyhtye</title>
+  <meta name="keywords" content="Sanoin ja sävelin, Rantamäen perheyhtye, Martta Rantamäki, haitarimusiikki, omakustanne">
+  <meta name="description" content="Sanoin ja sävelin – Rantamäen perheyhtyeen levy, jossa 14 kappaletta Martan sävelmiä ja sanoituksia. Kuuntele introt ja tilaa levy.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="styles.css">
-
-  <style>
-    body.sanoin-page {
-      background: #0c84b8;
-      color: #102030;
-    }
-
-    .album-wrapper {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 2rem 1rem 3rem;
-    }
-
-    .album-card {
-      max-width: 980px;
-      width: 100%;
-      background: #ffffff;
-      border-radius: 8px;
-      padding: 1.5rem;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-      display: grid;
-      grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
-      gap: 1.5rem;
-      margin-top: 1rem;
-    }
-
-    .album-cover img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 4px;
-    }
-
-    .album-text p {
-      margin: 0 0 0.75rem 0;
-      font-size: 0.95rem;
-      line-height: 1.5;
-    }
-
-    .track-list {
-      list-style: none;
-      padding: 0;
-      margin: 0.5rem 0 1.25rem 0;
-      font-size: 0.95rem;
-    }
-
-    .track-list li + li {
-      margin-top: 0.2rem;
-    }
-
-    .price-block {
-      font-weight: bold;
-      margin-top: 0.6rem;
-    }
-
-    .order-link {
-      margin-top: 1rem;
-      display: inline-block;
-      padding: 0.45rem 0.9rem;
-      border-radius: 999px;
-      background: #0c6fbf;
-      color: #ffffff;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 0.95rem;
-    }
-
-    .order-link:hover {
-      background: #084f8c;
-    }
-
-    .small-print {
-      font-size: 0.75rem;
-      color: #666;
-      margin-top: 0.8rem;
-    }
-
-    @media (max-width: 720px) {
-      .album-card {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
 </head>
 
-<body class="sanoin-page">
-
+<body class="album-page">
   <header class="site-header">
     <div class="header-top">
-      <div class="otto-box">
-        <img src="Kuvat/Otto.jpg" alt="Otto Rantamäki" class="otto-photo">
-        <div class="otto-text">
-          <p class="rip-line">R.I.P Otto Rantamäki</p>
-          <p class="dates">27.06.1926 – 19.04.2011</p>
+
+      <!-- In Memoriam -->
+      <div class="memoriam-box">
+        <div class="memoriam-top">
+          <span class="note-symbol">𝄞</span>
+          <span class="memoriam-title">In Memoriam</span>
+          <span class="note-symbol">𝄞</span>
         </div>
+        <div class="memoriam-names">Martta ja Otto Rantamäki</div>
       </div>
 
+      <!-- Title -->
       <div class="title-box">
         <div class="flags-row">
           <span class="flag">🇫🇮</span>
@@ -119,64 +37,55 @@
         </p>
       </div>
 
-      <div class="cover-box">
-        <img src="Kuvat/vedos.jpg" class="cover-photo" alt="">
-        <p class="cover-caption">Rantamäen perheyhtye</p>
-      </div>
     </div>
 
+    <!-- Navigaatio -->
     <nav class="main-nav">
       <ul>
         <li><a href="etusivu.html">Etusivu</a></li>
-        <li><a href="ollaansuomalaisii.htm">Ollaan Suomalaisii</a></li>
+        <li><a href="ollaansuomalaisii.htm">Ollaan suomalaisii</a></li>
         <li><a href="sanoinjasavelin.htm" class="active">Sanoin ja sävelin</a></li>
         <li><a href="joululauluja.htm">Joululauluja</a></li>
         <li><a href="laulujaelamalle.htm">Lauluja elämälle</a></li>
         <li><a href="rakasta.htm">Rakasta, kärsi ja unhoita</a></li>
         <li><a href="muistojentaikaa.htm">Muistojen Taikaa</a></li>
-        <li><a href="tilaus.htm">Tilaa</a></li>
+        <li><a href="tilaus.htm">Tilaa äänitteitä &amp; nuotteja</a></li>
+        <li><a href="palaute.htm">Palaute &amp; yhteystiedot</a></li>
       </ul>
     </nav>
+
+    <!-- Kielenvaihto -->
+    <div class="lang-switch">
+      <a href="sanoinjasavelin.htm" class="active-lang">FI</a> |
+      <a href="sanoinjasavelin_eng.htm">EN</a>
+    </div>
   </header>
 
   <div class="album-wrapper">
     <main class="album-card">
+
+      <!-- Kansikuva -->
       <div class="album-cover">
         <a href="tilaus.htm">
-          <img src="Kuvat/sanoinja.gif" alt="Sanoin ja sävelin – kansi">
+          <img src="Kuvat/sanoin.jpg" alt="Sanoin ja sävelin – kansi">
         </a>
       </div>
 
+      <!-- Tekstit -->
       <section class="album-text">
-        <p>
-          Sanoin ja sävelin on julkaistu sekä cd että kasettina, laulajina ovat Anna-Liisa &amp; Merja,
-          säestys Martta &amp; Otto.
-          Lisäksi Martta Rantamäki on saanut kansiin Sanoin ja Sävelin I, II ja III -nuottikirjat,
-          joista löytyy yhteensä 101 kappaletta Martan omaa tuotantoa.
+        <h1>Sanoin ja sävelin</h1>
+
+        <p class="listen-note">
+          Alla olevista linkeistä voit kuunnella levyjen introt. Lataus voi kestää hetken,
+          mutta hyväähän kannattaa vähän odottaa.
         </p>
 
         <ul class="track-list">
-          <li><a href="Introt/Sanoin%20ja%20Savelin/Serenadikaustisille.mp3" target="_blank">Serenadi Kaustisille</a></li>
-          <li><a href="Introt/Sanoin%20ja%20Savelin/Illan%20hamatyessa.mp3" target="_blank">Illan hämärtyessä</a></li>
-          <li><a href="Introt/Sanoin%20ja%20Savelin/Se%20niinko%20olla%20vois.mp3" target="_blank">Se niinkö olla vois</a></li>
-          <li><a href="Introt/Sanoin%20ja%20Savelin/Onnen%20askeleet.mp3" target="_blank">Onnen askeleet</a></li>
-          <li><a href="Introt/Sanoin%20ja%20Savelin/Kevaan%20ihmeenko%20naan.mp3" target="_blank">Kevään ihmeenkö nään</a></li>
-          <li><a href="Introt/Sanoin%20ja%20Savelin/Nyt%20kaikki%20muuttuu.mp3" target="_blank">Nyt kaikki muuttuu</a></li>
-          <li><a href="Introt/Sanoin%20ja%20Savelin/Aitienpaivana.mp3" target="_blank">Äitienpäivänä</a></li>
-          <li><a href="Introt/Sanoin%20ja%20Savelin/Haaveillen%20huomiseen.mp3" target="_blank">Haaveillen huomiseen</a></li>
-          <li><a href="Introt/Sanoin%20ja%20Savelin/Elaman%20kulku.mp3" target="_blank">Elämän kulku</a></li>
-          <li><a href="Introt/Sanoin%20ja%20Savelin/Sai%20soitellen%20syksy.mp3" target="_blank">Sai soitellen syksy</a></li>
-          <li><a href="Introt/Sanoin%20ja%20Savelin/Pienen%20maalaistalon%20emanta.mp3" target="_blank">Pienen maalaistalon emäntä</a></li>
-          <li><a href="Introt/Sanoin%20ja%20Savelin/Tunteiden%20tulkki.mp3" target="_blank">Tunteiden tulkki</a></li>
-          <li><a href="Introt/Sanoin%20ja%20Savelin/Ela%20sydamella.mp3" target="_blank">Elä sydämellä</a></li>
-          <li><a href="Introt/Sanoin%20ja%20Savelin/Isanpaivana%20isalle.mp3" target="_blank">Isänpäivänä isälle</a></li>
+          <li>Ei erillisiä mp3-introja saatavilla tälle levylle (halutessasi voimme lisätä linkit myöhemmin)</li>
         </ul>
 
         <p class="price-block">
-          h. 15e / cd, 10e / kasetti<br>
-          Sanoin ja Sävelin -nuottikirjat I–III 20e<br>
-          Nuottikirjat + kasetti yht. 25e<br>
-          Nuottikirjat + cd yht. 30e
+          h. 20e
         </p>
 
         <a class="order-link" href="tilaus.htm">Tilaa tästä</a>
@@ -185,12 +94,13 @@
           (Tilaukset avautuvat uuteen tilauslomakkeeseen.)
         </p>
       </section>
+
     </main>
   </div>
 
   <footer class="site-footer">
     <p>
-      © Rantamäen perheyhtye – Ollaan suomalaisii · Yhteystiedot ja tilaukset:
+      © Rantamäen perheyhtye – Sanoin ja sävelin · Yhteystiedot ja tilaukset:
       <a href="mailto:me@ollaansuomalaisii.fi">me@ollaansuomalaisii.fi</a>
     </p>
   </footer>
