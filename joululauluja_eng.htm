@@ -8,94 +8,19 @@
   <meta name="description" content="Joululauluja – Christmas songs by Martta and Otto Rantamäki. CD & cassette and a separate songbook. Listen to samples and order.">
 
   <link rel="stylesheet" href="styles.css">
-
-  <style>
-    body.joululauluja-page {
-      background: #b0002a;
-      color: #102030;
-    }
-    .album-wrapper {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 2rem 1rem 3rem;
-    }
-    .album-card {
-      max-width: 980px;
-      width: 100%;
-      background: #fff;
-      border-radius: 8px;
-      padding: 1.5rem;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-      display: grid;
-      grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
-      gap: 1.5rem;
-      margin-top: 1rem;
-    }
-    .album-cover img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 4px;
-    }
-    .listen-note {
-      margin-bottom: 0.75rem;
-      font-size: 0.95rem;
-    }
-    .track-list {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 1.25rem 0;
-      font-size: 0.95rem;
-    }
-    .track-list li + li {
-      margin-top: 0.2rem;
-    }
-    .album-text p {
-      margin: 0 0 0.75rem 0;
-      line-height: 1.5;
-      font-size: 0.95rem;
-    }
-    .price-block {
-      font-weight: bold;
-      margin-top: 0.5rem;
-    }
-    .order-link {
-      margin-top: 1rem;
-      display: inline-block;
-      padding: 0.4rem 0.9rem;
-      border-radius: 999px;
-      background: #b0002a;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
-    }
-    .order-link:hover,
-    .order-link:focus {
-      background: #8a001f;
-      text-decoration: none;
-    }
-    .small-print {
-      font-size: 0.75rem;
-      color: #666;
-      margin-top: 1rem;
-    }
-    @media (max-width: 720px) {
-      .album-card { grid-template-columns: 1fr; }
-    }
-  </style>
 </head>
 
-<body class="joululauluja-page">
+<body class="album-page joululauluja-page">
   <header class="site-header">
     <div class="header-top">
-      <div class="otto-box">
-        <img src="Kuvat/otto.jpg" alt="Otto Rantamäki" class="otto-photo">
-        <div class="otto-text">
-          <p class="rip-line">R.I.P. Otto Rantamäki</p>
-          <p class="dates">27.06.1926 – 19.04.2011</p>
+      <!-- In Memoriam -laatikko -->
+      <div class="memoriam-box">
+        <div class="memoriam-top">
+          <span class="note-symbol">𝄞</span>
+          <span class="memoriam-title">In Memoriam</span>
+          <span class="note-symbol">𝄞</span>
         </div>
+        <div class="memoriam-names">Martta ja Otto Rantamäki</div>
       </div>
 
       <div class="title-box">
@@ -108,11 +33,7 @@
           Accordion music and songs about Finnish life – original melodies and lyrics
         </p>
       </div>
-
-      <div class="cover-box">
-        <img src="Kuvat/vedos.jpg" alt="Family ensemble Rantamäki" class="cover-photo">
-        <p class="cover-caption">Family ensemble Rantamäki</p>
-      </div>
+      <!-- Ei erillistä yläkuvaa levysivuilla -->
     </div>
 
     <nav class="main-nav">
@@ -128,6 +49,12 @@
         <li><a href="palaute_eng.htm">Feedback &amp; contact</a></li>
       </ul>
     </nav>
+
+    <!-- Kielenvaihto -->
+    <div class="lang-switch">
+      <a href="joululauluja.htm">FI</a> |
+      <a href="joululauluja_eng.htm" class="active-lang">EN</a>
+    </div>
   </header>
 
   <div class="album-wrapper">
@@ -139,6 +66,8 @@
       </div>
 
       <section class="album-text">
+        <h1>Joululauluja</h1>
+
         <p class="listen-note">
           Below you can listen to short samples from the Christmas record.
           Loading may take a little while.
