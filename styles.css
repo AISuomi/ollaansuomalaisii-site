@@ -663,3 +663,6 @@ a:hover {
     grid-template-columns: 1fr;
   }
 }
+body.joululauluja-page {
+  background: #b0002a;
+}
