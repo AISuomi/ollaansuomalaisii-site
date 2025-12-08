@@ -11,36 +11,37 @@
   <link rel="stylesheet" href="styles.css">
 
   <style>
-    body.ollaansuomalaisii-page {
-      background: #0c84b8;
-      color: #102030;
-    }
-
+    /* Levysivun oma korttilayout */
     .album-wrapper {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 2rem 1rem 3rem;
+      max-width: 1100px;
+      margin: 1.5rem auto 2.5rem;
+      padding: 0 1rem;
     }
 
     .album-card {
       max-width: 980px;
       width: 100%;
+      margin: 0 auto;
       background: #ffffff;
-      border-radius: 8px;
+      border-radius: 10px;
       padding: 1.5rem;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.18);
       display: grid;
       grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
       gap: 1.5rem;
-      margin-top: 1rem;
     }
 
     .album-cover img {
       max-width: 100%;
       height: auto;
-      border-radius: 4px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .album-text h1 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
     }
 
     .listen-note {
@@ -84,6 +85,7 @@
 
     .order-link:hover {
       background: #084f8c;
+      text-decoration: none;
     }
 
     .small-print {
@@ -100,16 +102,16 @@
   </style>
 </head>
 
-<body class="ollaansuomalaisii-page">
-
+<body>
   <header class="site-header">
     <div class="header-top">
-      <div class="otto-box">
-        <img src="Kuvat/Otto.jpg" alt="Otto Rantamäki" class="otto-photo">
-        <div class="otto-text">
-          <p class="rip-line">R.I.P Otto Rantamäki</p>
-          <p class="dates">27.06.1926 – 19.04.2011</p>
+      <div class="memoriam-box">
+        <div class="memoriam-top">
+          <span class="note-symbol">𝄞</span>
+          <span class="memoriam-title">In Memoriam</span>
+          <span class="note-symbol">𝄞</span>
         </div>
+        <div class="memoriam-names">Martta ja Otto Rantamäki</div>
       </div>
 
       <div class="title-box">
@@ -118,13 +120,11 @@
           <span class="site-title">Rantamäen perheyhtye</span>
           <span class="flag">🇫🇮</span>
         </div>
-        <p class="subtitle">Haitarimusiikkia ja lauluja elämästä – omia sävelmiä ja sanoituksia</p>
+        <p class="subtitle">
+          Haitarimusiikkia ja lauluja elämästä – omia sävelmiä ja sanoituksia
+        </p>
       </div>
-
-      <div class="cover-box">
-        <img src="Kuvat/vedos.jpg" class="cover-photo" alt="">
-        <p class="cover-caption">Rantamäen perheyhtye</p>
-      </div>
+      <!-- Ei erillistä yläkuvaa levysivuilla -->
     </div>
 
     <nav class="main-nav">
@@ -135,10 +135,16 @@
         <li><a href="joululauluja.htm">Joululauluja</a></li>
         <li><a href="laulujaelamalle.htm">Lauluja elämälle</a></li>
         <li><a href="rakasta.htm">Rakasta, kärsi ja unhoita</a></li>
-        <li><a href="muistojentaikaa.htm">Muistojentaikaa</a></li>
-        <li><a href="tilaus.htm">Tilaa</a></li>
+        <li><a href="muistojentaikaa.htm">Muistojen Taikaa</a></li>
+        <li><a href="tilaus.htm">Tilaa äänitteitä &amp; nuotteja</a></li>
+        <li><a href="palaute.htm">Palaute &amp; yhteystiedot</a></li>
       </ul>
     </nav>
+
+    <div class="lang-switch">
+      <a href="etusivu.html" class="active-lang">FI</a> |
+      <a href="english.htm">EN</a>
+    </div>
   </header>
 
   <div class="album-wrapper">
@@ -151,6 +157,8 @@
       </div>
 
       <section class="album-text">
+        <h1>Ollaan suomalaisii</h1>
+
         <p class="listen-note">
           Allaolevista linkeistä voit kuunnella introt, hieman saattaa lataus kestää
           mutta hyväähän kannattaa vähän odottaakin.
