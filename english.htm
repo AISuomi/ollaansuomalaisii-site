@@ -5,9 +5,7 @@
   <title>Family ensemble Rantamäki – Finnish folk music</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Tärkeä kuvaus hakukoneille -->
-  <meta name="description" content="Family ensemble Rantamaki – Martta ja Otto Rantamaki family, Merja, Liisa, Anna-Liisa ja Margit. Ollaan suomalaisii, Sanoin ja sävelin, Joululauluja, Lauluja elämälle, Rakasta kärsi ja unhoita, Muistojen Taikaa.">
-
+  <!-- Description for search engines -->
   <meta name="description" content="Family ensemble Rantamäki from Alajärvi, Ostrobothnia, Finland – accordion music and songs about Finnish life. Records include Ollaan suomalaisii, Sanoin ja sävelin, Joululauluja, Lauluja elämälle, Rakasta kärsi ja unhoita and Muistojen Taikaa.">
 
   <meta property="og:title" content="Family ensemble Rantamäki – Finnish folk music">
@@ -19,14 +17,16 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="home-page">
+<body>
   <header class="site-header">
     <div class="header-top">
-      <div class="otto-box">
-        <img src="Kuvat/otto.jpg" alt="Otto Rantamäki" class="otto-photo">
-        <div class="RIP-text">
-<p class="rip-line">In memoriam Martta ja Otto Rantamäki</p>
+      <div class="memoriam-box">
+        <div class="memoriam-top">
+          <span class="note-symbol">𝄞</span>
+          <span class="memoriam-title">In Memoriam</span>
+          <span class="note-symbol">𝄞</span>
         </div>
+        <div class="memoriam-names">Martta and Otto Rantamäki</div>
       </div>
 
       <div class="title-box">
@@ -39,11 +39,7 @@
           Accordion music and songs about Finnish life – original melodies and lyrics
         </p>
       </div>
-
-      <div class="cover-box">
-        <img src="Kuvat/vedos.jpg" alt="Family ensemble Rantamäki" class="cover-photo">
-        <p class="cover-caption">Family ensemble Rantamäki</p>
-      </div>
+      <!-- No separate top cover image on this layout -->
     </div>
 
     <nav class="main-nav">
@@ -62,26 +58,17 @@
         <li><a href="palaute_eng.htm">Feedback &amp; contact</a></li>
       </ul>
     </nav>
+
+    <!-- Language switch -->
+    <div class="lang-switch">
+      <a href="etusivu.html">FI</a> |
+      <a href="english.htm" class="active-lang">EN</a>
+    </div>
   </header>
 
   <main class="page-layout">
-    <!-- SIDEBAR -->
+    <!-- SIDEBAR: only orders + greeting + picture -->
     <aside class="sidebar">
-      <section class="sidebar-section">
-        <h2>Family ensemble Rantamäki</h2>
-        <p>
-          We wish you many warm moments with Finnish folk music.
-        </p>
-      </section>
-
-      <section class="sidebar-section">
-        <h3>Language</h3>
-        <ul class="plain-list">
-          <li><a href="etusivu.html">Suomeksi</a></li>
-          <li><a href="english.htm">In English</a></li>
-        </ul>
-      </section>
-
       <section class="sidebar-section">
         <h3>Orders &amp; feedback</h3>
         <p>
@@ -94,12 +81,19 @@
           or go directly to the
           <a href="tilaus_eng.htm">order &amp; feedback page</a>.
         </p>
+        <p class="sidebar-greeting">
+          We wish you many warm moments with Finnish folk music.
+        </p>
+
+        <div class="sidebar-cover-wrapper">
+          <img src="Kuvat/vedos.jpg" alt="Family ensemble Rantamäki" class="sidebar-cover">
+        </div>
       </section>
     </aside>
 
-    <!-- MAIN CONTENT -->
+    <!-- MAIN CONTENT: one big box -->
     <section class="content">
-      <article class="intro-block">
+      <section class="story-block">
         <h1>Welcome to the homepage of family ensemble Rantamäki</h1>
         <p class="release-note">
           From Alajärvi (Ostrobothnia), Finland
@@ -120,9 +114,7 @@
           On our newest record we also have a bass player, Matti Kuhalampi from
           Alajärvi, playing with us.
         </p>
-      </article>
 
-      <section class="story-block">
         <h2>Records and Martta’s songs</h2>
 
         <p>
@@ -198,39 +190,29 @@
           one together with Martta.
         </p>
 
+        <h2>Records</h2>
+        <ul>
+          <li><a href="ollaansuomalaisii_eng.htm">Ollaan suomalaisii</a></li>
+          <li><a href="sanoinjasavelin_eng.htm">Sanoin ja sävelin I–III</a></li>
+          <li><a href="joululauluja_eng.htm">Joululauluja</a></li>
+          <li><a href="laulujaelamalle_eng.htm">Lauluja elämälle</a></li>
+          <li><a href="rakasta_eng.htm">Rakasta, kärsi ja unhoita</a></li>
+          <li><a href="muistojentaikaa_eng.htm">Muistojen Taikaa</a></li>
+        </ul>
+
+        <h2>Songbooks &amp; sheet music</h2>
+        <p>
+          Songbooks <em>Sanoin ja sävelin</em> I–III and the small Christmas
+          songbook <em>Joululauluja</em> are available, as well as single pieces
+          of sheet music.
+        </p>
+        <p>
+          <a href="tilaus_eng.htm" class="button">Ask about sheet music</a>
+        </p>
+
         <p>
           Just take a chance – and make the order!
         </p>
-      </section>
-
-      <section class="two-column">
-        <div>
-          <h2>Records</h2>
-          <ul>
-            <li><a href="ollaansuomalaisii_eng.htm">Ollaan suomalaisii</a></li>
-            <li><a href="sanoinjasavelin_eng.htm">Sanoin ja sävelin I–III</a></li>
-            <li><a href="joululauluja_eng.htm">Joululauluja</a></li>
-            <li><a href="laulujaelamalle_eng.htm">Lauluja elämälle</a></li>
-            <li><a href="rakasta_eng.htm">Rakasta, kärsi ja unhoita</a></li>
-            <li><a href="muistojentaikaa_eng.htm">Muistojen Taikaa</a></li>
-          </ul>
-          <p>
-            You can listen to short samples on each record page and then
-            <a href="tilaus_eng.htm">place an order</a>.
-          </p>
-        </div>
-
-        <div>
-          <h2>Songbooks &amp; sheet music</h2>
-          <p>
-            Songbooks <em>Sanoin ja sävelin</em> I–III and the small Christmas
-            songbook <em>Joululauluja</em> are available, as well as single pieces
-            of sheet music.
-          </p>
-          <p>
-            <a href="tilaus_eng.htm" class="button">Ask about sheet music</a>
-          </p>
-        </div>
       </section>
     </section>
   </main>
@@ -243,3 +225,4 @@
   </footer>
 </body>
 </html>
+
