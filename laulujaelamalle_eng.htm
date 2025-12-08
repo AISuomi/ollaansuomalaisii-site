@@ -8,79 +8,19 @@
   <meta name="description" content="Lauluja Elämälle – cassette with songs composed by Martta Rantamäki. Vocals by Anna-Liisa, Margit and Merja as soloists.">
 
   <link rel="stylesheet" href="styles.css">
-
-  <style>
-    body.lauluja-page {
-      background: #0c84b8;
-      color: #102030;
-    }
-    .album-wrapper {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 2rem 1rem 3rem;
-    }
-    .album-card {
-      max-width: 900px;
-      width: 100%;
-      background: #ffffff;
-      border-radius: 8px;
-      padding: 1.5rem;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-      display: grid;
-      grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
-      gap: 1.5rem;
-      margin-top: 1rem;
-    }
-    .album-cover img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 4px;
-    }
-    .album-text p {
-      margin: 0 0 0.75rem 0;
-      font-size: 0.95rem;
-      line-height: 1.5;
-    }
-    .price-block {
-      font-weight: bold;
-      margin-top: 0.5rem;
-    }
-    .order-link {
-      margin-top: 1rem;
-      display: inline-block;
-      padding: 0.4rem 0.9rem;
-      border-radius: 999px;
-      background: #0c6fbf;
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
-    }
-    .order-link:hover {
-      background: #084f8c;
-    }
-    .small-print {
-      font-size: 0.75rem;
-      color: #666;
-      margin-top: 1rem;
-    }
-    @media (max-width: 720px) {
-      .album-card { grid-template-columns: 1fr; }
-    }
-  </style>
 </head>
 
-<body class="lauluja-page">
+<body class="album-page lauluja-page">
   <header class="site-header">
     <div class="header-top">
-      <div class="otto-box">
-        <img src="Kuvat/otto.jpg" alt="Otto Rantamäki" class="otto-photo">
-        <div class="otto-text">
-          <p class="rip-line">R.I.P. Otto Rantamäki</p>
-          <p class="dates">27.06.1926 – 19.04.2011</p>
+      <!-- In Memoriam -laatikko -->
+      <div class="memoriam-box">
+        <div class="memoriam-top">
+          <span class="note-symbol">𝄞</span>
+          <span class="memoriam-title">In Memoriam</span>
+          <span class="note-symbol">𝄞</span>
         </div>
+        <div class="memoriam-names">Martta ja Otto Rantamäki</div>
       </div>
 
       <div class="title-box">
@@ -93,11 +33,7 @@
           Accordion music and songs about Finnish life – original melodies and lyrics
         </p>
       </div>
-
-      <div class="cover-box">
-        <img src="Kuvat/vedos.jpg" alt="Family ensemble Rantamäki" class="cover-photo">
-        <p class="cover-caption">Family ensemble Rantamäki</p>
-      </div>
+      <!-- ei yläkuvaa albumisivuilla -->
     </div>
 
     <nav class="main-nav">
@@ -108,11 +44,17 @@
         <li><a href="joululauluja_eng.htm">Joululauluja</a></li>
         <li><a href="laulujaelamalle_eng.htm" class="active">Lauluja elämälle</a></li>
         <li><a href="rakasta_eng.htm">Rakasta, kärsi ja unhoita</a></li>
-        <li><a href="muistojentaikaa_eng.htm">Muistojen Taikaa</a></li>
+        <li><a href="muistojentaikaa_eng.htm">Muistojentaikaa</a></li>
         <li><a href="tilaus_eng.htm">Orders &amp; sheet music</a></li>
         <li><a href="palaute_eng.htm">Feedback &amp; contact</a></li>
       </ul>
     </nav>
+
+    <!-- kielenvaihto -->
+    <div class="lang-switch">
+      <a href="laulujaelamalle.htm">FI</a> |
+      <a href="laulujaelamalle_eng.htm" class="active-lang">EN</a>
+    </div>
   </header>
 
   <div class="album-wrapper">
@@ -124,6 +66,8 @@
       </div>
 
       <section class="album-text">
+        <h1>Lauluja Elämälle</h1>
+
         <p>
           The recording <strong>“Lauluja Elämälle”</strong> (“Songs for Life”) is currently
           available only as a cassette.
