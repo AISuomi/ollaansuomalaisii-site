@@ -520,23 +520,60 @@ a:hover {
   font-size: 1rem;   /* aiemmin 1.1rem */
   font-family: "Georgia", "Times New Roman", serif;
 }
-/* Kielenvaihto headerin alla */
-.lang-switch {
-  max-width: 1100px;          /* sama, mitä käytät sisältöalueella */
-  margin: 0.5rem auto 1rem;/* Kielenvaihto headerin alla */
+  /* In Memoriam -tyylit hionta */
+.memoriam-box {
+  text-align: center;
+  margin: 0.75rem auto 0.5rem;
+}
+
+.memoriam-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.memoriam-title {
+  font-family: "UnifrakturCook", "Times New Roman", serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.memoriam-names {
+  margin-top: 0.15rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+.note-symbol {
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+/* Kielenvaihto-nappi näkyvämmäksi */
 .lang-switch {
   max-width: 1100px;
-  margin: 0.5rem auto 1rem;
-  text-align: right;
+  margin: 0.4rem auto 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 0.2rem 0.8rem;
+  border-radius: 999px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
   font-size: 0.9rem;
 }
 
 .lang-switch a {
+  color: #005b99;
   text-decoration: none;
+  font-weight: 600;
+  margin: 0 0.15rem;
 }
 
 .lang-switch .active-lang {
-  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* Tarina-tekstin luettavuus */
