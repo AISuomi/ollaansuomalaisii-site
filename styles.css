@@ -588,16 +588,18 @@ a:hover {
   font-style: italic;
 }
 
+/* Sivupalkin kansikuva kompaktimmaksi */
 .sidebar-cover-wrapper {
   margin-top: 1rem;
   text-align: center;
 }
 
 .sidebar-cover {
-  max-width: 100%;
+  max-width: 220px;   /* säädä esim. 180–240px makusi mukaan */
+  width: 100%;
   height: auto;
   border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.18);
 }
 
   text-align: right;
@@ -618,8 +620,4 @@ a:hover {
   line-height: 1.6;
 }
 
-/* Sivupalkin tervehdys vähän pehmeämmäksi */
-.sidebar-greeting {
-  margin-top: 1.2rem;
-  font-style: italic;
-}
+
